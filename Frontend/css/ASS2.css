@@ -1,0 +1,549 @@
+*{
+    margin: 0px;
+}
+#main{
+    height:auto;
+    width:100%;
+    margin:auto;
+}
+#header{
+    height:60px;
+    background-color:black;
+}
+#logo{
+    height: 60px;
+    transition: 2s;
+    float:left;
+}
+ #header span  {
+    float: left;
+    margin:20px;
+    color:white;
+} 
+#header span a  {
+    float: left;
+    /* margin:20px; */
+    color:wheat;
+    text-decoration: none;
+} 
+#header span Sign{
+ width: 170px;
+}
+#header span button{
+    margin: 0px;
+    background-color: yellow;
+}
+
+#header_content{
+    position:absolute;
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+#label{
+ background-color: antiquewhite;
+ color: black;
+ height: 40px;
+text-align: center;
+z-index: 1;
+
+}
+#label p{
+    margin: top 30px; 
+    padding: 12px;
+}
+
+
+
+#box{
+    height:400px;
+    padding: 15px;
+}
+#box1,#box2,#box3,#box4{
+    height:350px;
+    width:270px;
+    margin:23px;
+    float: left;
+}
+#boximg{
+    height:300px;
+    width:300px;
+    float: left;
+}
+#leftbtn{
+    height: 30px;
+    width: 140px;
+    background-color: green;
+    color:white;
+    border:2px solid black;
+    margin-top: 20px;
+    margin-left: 100px;
+    
+}
+#center{
+    height:30px;
+    padding: 5px;
+    font-family: candara;
+}
+
+
+#photo{
+    height: 500px;
+}
+#image{
+    height: 500px;
+    width: 100%;
+}
+
+#content{
+    height: 300px;
+    position: relative;
+    
+}
+#content img{
+width: 100%;
+display: block;
+}
+#one{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+}
+#two{
+    position: absolute;
+    top: 360px;
+    left:160px;
+    color: aliceblue;
+    background-color: black;
+}
+#three{
+    position: absolute;
+    top: 360px;
+    left: 700px;
+    color: aliceblue;
+    background-color: black;
+}
+#four{
+    position: absolute;
+    top: 360px;
+    left: 970px;
+    color: aliceblue;
+    background-color: black;
+}
+#five{
+    position: absolute;
+    top: 360px;
+    left: 430px;
+    color: aliceblue;
+    background-color:black;
+}
+
+#brand{
+    height:200px;
+    padding: 15px;
+    /* background-color: aqua; */
+}
+#ban1,#ban2,#ban3,#ban4{
+    height:200px;
+    width:280px;
+    margin:23px;
+    float: left;
+}
+#banimg{
+    height:100px;
+    width:500px;
+    float: left;
+    margin-left: 20px;
+}
+#lower3{
+     background-image: url('Image/long.webp');
+    height: 600px;
+    width: 100%
+    /* background-color: aqua; */
+}
+#lower2{
+    height:400px;
+    color: black;
+    padding: 8px;
+    margin-right: 95px;
+    float: right;
+    
+    
+}
+#ram{
+    height: 250px;
+    width: 180px;
+    font-family: candara;
+    
+    float:right;
+    
+    line-height: 15px;
+}
+#footer{
+    height:30px;
+    padding: 5px;
+    background-color: black;
+    color: beige;
+    font-family: candara;
+}
+#about{
+    height: 400px;
+    padding:50px;
+    font-family: candara;
+}
+#about1{
+    float: left;
+    height:300px;
+    width: 300px;
+    margin: 10px;
+}
+#aboutbanner{
+    height: 300px;
+    width: 300px;
+}
+#about2{
+    float: left;
+    margin: 30px;
+    height:310px;
+    text-align: justify;
+    font-size: 22px;
+    width: 700px;
+    padding: 20px;
+}
+
+#lower{
+    height:400px;
+    background-color: whitesmoke;
+    padding: 30px;
+    font-family: candara;
+}
+#row,#row2,#row3{
+    height: 290px;
+    width: 185px;
+    font-size: 20px;
+    font-family: candara;
+    margin: 5px;
+    float:left;
+    padding: 20px;
+    line-height: 35px;
+}
+#signin{
+    height:345px;
+    padding: 80px;
+}
+#sign_in{
+    font-family: candara;
+    padding: 20px;
+    height: 300px;
+    width: 450px;
+    margin: auto;
+    border: 2px;
+}
+
+.input_field{
+    height:40px;
+    width: 400px;
+    margin: 5px;
+    margin-left: 20px;
+    font-family: candara;
+    font-size: 18px;
+    background: transparent;
+    border-top:0;
+    border-right:0;
+    border-left:0;
+    border-bottom: 4;
+    text-align: center;
+    outline: 0px;
+    background-color: whitesmoke;
+}
+
+.input_btn{
+    font-family: candara;
+    font-size: 18px;
+    height:42px;
+    width: 80px;
+    margin: 5px;
+    margin-left: 70px;
+    
+    background-color: black;
+    border:0px;
+    color:white;
+}
+#form_align{
+    margin-top: 30px;
+}
+
+
+@media only  screen and (max-width:700px) {
+    *{
+        margin: 0px;
+    }
+    /* #main{
+        height:auto;
+        width:100%;
+        margin:auto;
+    } */
+    #header{
+        height:90px;
+        background-color:black;
+    }
+    #logo{
+        height: 60px;
+        transition: 2s;
+        float:left;
+    }
+     #header span  {
+        float: left;
+        margin:10px;
+        color:white;
+    } 
+    #header span a  {
+        float: left;
+        margin-top: 10px;
+        color:wheat;
+    } 
+    #header span Sign{
+     width: 170px;
+    }
+    #header span button{
+        
+        background-color: rgb(255, 0, 0);
+        
+    }
+    
+    #header_content{
+        position:absolute;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    
+    #label{
+     background-color: antiquewhite;
+     color: black;
+     height: 40px;
+    text-align: center;
+    z-index: 1;
+    
+    }
+    #label p{
+        margin: top 30px; 
+        padding: 12px;
+    }
+    
+    
+    
+    #box{
+        height:800px;
+        padding: 15px;
+    }
+    #box1,#box2,#box3,#box4{
+        height:350px;
+        width:270px;
+        margin:23px;
+        float: left;
+    }
+    #boximg{
+        height:300px;
+        width:300px;
+        float: left;
+    }
+    #leftbtn{
+        height: 30px;
+        width: 140px;
+        background-color: green;
+        color:white;
+        border:2px solid black;
+        margin-top: 20px;
+        margin-left: 100px;
+        
+    }
+    #center{
+        height:30px;
+        padding: 5px;
+        font-family: candara;
+    }
+    
+    
+    #photo{
+        height: 500px;
+    }
+    #image{
+        height: 500px;
+        width: 100%;
+    }
+    
+    #content{
+        height: 1200px;
+        position: relative;
+        
+    }
+    #content img{
+    width: 100%;
+    display: block;
+    }
+    #one{
+        position:absolute;
+       
+        font-size: 25px;
+        
+    }
+    #two{
+        position: absolute;
+      background-color: black;
+        
+    }
+     #three{
+        position: absolute;
+       float: right;
+        color: aliceblue;
+       
+        background-color: black;
+    }
+    #four{
+        position: absolute;
+        color: aliceblue;
+        background-color: black;
+    }
+    #five{
+        position: absolute;
+        color: aliceblue;
+        background-color:black;
+    }  
+    
+    #brand{
+        height:400px;
+        padding: 15px;
+        
+    }
+    #ban1,#ban2,#ban3,#ban4{
+        height:100px;
+        width:180px;
+        margin:23px;
+        float: left;
+    }
+    #banimg{
+        height:100px;
+        width:500px;
+        float: left;
+        margin-left: 20px;
+    }
+    #lower3{
+         background-image: url('Image/long.webp');
+        height: 600px;
+        width: 100%
+        /* background-color: aqua; */
+    }
+    #lower2{
+        height:400px;
+        color: black;
+        padding: 8px;
+        margin-right: 95px;
+        float: right;
+        
+        
+    }
+    #ram{
+        height: 250px;
+        width: 180px;
+        font-family: candara;
+        
+        float:right;
+        
+        line-height: 15px;
+    }
+    #footer{
+        height:30px;
+        padding: 5px;
+        background-color: black;
+        color: beige;
+        font-family: candara;
+    }
+    #about{
+        height: 400px;
+        padding:50px;
+        font-family: candara;
+    }
+    #about1{
+        float: left;
+        height:300px;
+        width: 300px;
+        margin: 10px;
+    }
+    #aboutbanner{
+        height: 300px;
+        width: 300px;
+    }
+    #about2{
+        float: left;
+        margin: 30px;
+        height:310px;
+        text-align: justify;
+        font-size: 22px;
+        width: 700px;
+        padding: 20px;
+    }
+    
+    #lower{
+        height:400px;
+        background-color: whitesmoke;
+        padding: 30px;
+        font-family: candara;
+    }
+    #row,#row2,#row3{
+        height: 290px;
+        width: 185px;
+        font-size: 20px;
+        font-family: candara;
+        margin: 5px;
+        float:left;
+        padding: 20px;
+        line-height: 35px;
+    }
+    #signin{
+        height:345px;
+        padding: 80px;
+    }
+    #sign_in{
+        font-family: candara;
+        padding: 20px;
+        height: 300px;
+        width: 450px;
+        margin: auto;
+        border: 2px;
+    }
+    
+    .input_field{
+        height:40px;
+        width: 400px;
+        margin: 5px;
+        margin-left: 20px;
+        font-family: candara;
+        font-size: 18px;
+        background: transparent;
+        border-top:0;
+        border-right:0;
+        border-left:0;
+        border-bottom: 4;
+        text-align: center;
+        outline: 0px;
+        background-color: whitesmoke;
+    }
+    
+    .input_btn{
+        font-family: candara;
+        font-size: 18px;
+        height:42px;
+        width: 80px;
+        margin: 5px;
+        margin-left: 70px;
+        
+        background-color: black;
+        border:0px;
+        color:white;
+    }
+    #form_align{
+        margin-top: 30px;
+    }
+}

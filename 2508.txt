@@ -1,0 +1,21 @@
+create view student2 as select * from student1;
+
+
+create temproray table student2 as select * from student1;
+
+create index rec on student1(rno,marks);
+
+// means of rec= index;
+
+
+**** show index from student1;
+
+**** show character set1;
+
+**** alter table student2 modify marks int first;
+
+
+**** alter table student2 modify marks int after name;
+
+
+**** alter table student2 modify marks int after rno;

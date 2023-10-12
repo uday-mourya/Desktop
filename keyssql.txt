@@ -1,0 +1,96 @@
+Certainly, here are explanations and examples of various types of keys in the context of a database:
+
+Primary Key:
+
+Explanation: A primary key is a unique identifier for each record in a table. It ensures data integrity and uniqueness.
+Example:
+sql
+Copy code
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50)
+);
+Foreign Key:
+
+Explanation: A foreign key is a column or set of columns in one table that refers to the primary key of another table, establishing relationships between tables.
+Example:
+sql
+Copy code
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT,
+    order_date DATE,
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+Unique Key:
+
+Explanation: A unique key ensures that the values in the key column(s) are unique, but unlike a primary key, it can allow NULL values.
+Example:
+sql
+Copy code
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    email VARCHAR(100) UNIQUE,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50)
+);
+Alternate Key:
+
+Explanation: An alternate key is a candidate key that is not chosen as the primary key but could still uniquely identify records.
+Example:
+sql
+Copy code
+CREATE TABLE users (
+    user_id INT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE,
+    email VARCHAR(100),
+    alternate_key_email (email) UNIQUE
+);
+Composite Key:
+
+Explanation: A composite key consists of two or more columns that together uniquely identify a record.
+Example:
+sql
+Copy code
+CREATE TABLE order_items (
+    order_id INT,
+    product_id INT,
+    quantity INT,
+    PRIMARY KEY (order_id, product_id)
+);
+Super Key:
+
+Explanation: A super key is a set of columns that uniquely identifies a record. It can include additional non-unique columns.
+Example:
+sql
+Copy code
+CREATE TABLE products (
+    product_id INT,
+    product_name VARCHAR(100),
+    category VARCHAR(50),
+    super_key (product_id, category)
+);
+Surrogate Key:
+
+Explanation: A surrogate key is an artificial primary key, often an auto-incremented integer, used instead of a natural key.
+Example:
+sql
+Copy code
+CREATE TABLE customers (
+    customer_id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50)
+);
+Candidate Key:
+
+Explanation: A candidate key is a column or set of columns that could potentially serve as the primary key.
+Example:
+sql
+Copy code
+CREATE TABLE departments (
+    department_id INT PRIMARY KEY,
+    department_code VARCHAR(10) UNIQUE,
+    department_name VARCHAR(50)
+);
+These key types help maintain data integrity, establish relationships between tables, and facilitate efficient data retrieval in a relational database system.

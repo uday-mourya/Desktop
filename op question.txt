@@ -1,0 +1,31 @@
+1 . what is operatory
+2. types of op
+3.what is 
+4.symbolic op
+6.arithmetic
+types of arithmetic op
+5.what is named op
+7.priority level arith
+8.rela op
+how many typ of relational op
+resul of relation op when it is used for looping or branching sttment
+55 what a logical op
+how many types of logical op
+ternary op
+wh dot op
+
+7.which java op which
+what i intance of operator 
+how many no .of op present in java
+
+
+loop
+
+how to define infinite loop
+what is default switch case
+can main method  return any value
+what types of loop present in java
+what is inhanced loop.
+how can new exit antycapadely 
+what is different unleveled and levelred bag statement
+bb

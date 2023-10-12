@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ #container{
+     height: auto;
+     width:97%;
+     margin: auto;
+ }
+ #logoline{
+     height: 120px;
+     display: flex;
+     align-items: center;
+     
+ }
+ #logo{
+     height: 110px;
+     width: 150px;
+     margin-left: 40px;
+ }
+ #logoline ul {
+     list-style: none;
+     padding: 10px;
+ }
+ 
+ #logoline ul li {
+     margin-left: 100px;
+     display: inline;
+     font-weight: bold;
+     
+ }
+ 
+ #logoline ul li a {
+     
+    margin-top: 30px;
+     text-decoration: none;
+     color: #0E2E50;
+ }
+ 
+ #logoline ul li a:hover {
+     text-decoration: none;
+     color: crimson;
+ }
+ #button{
+     background-color: aqua;
+     border-top-right-radius: 8px;
+     border-bottom-left-radius: 8px;
+ }
+ #banner{
+     height: 550px;
+     margin-top: 10px !important;
+ }
+ #banner_img{
+     height: 550px;
+     width: 100%;
+     
+ }
+ #third{
+     margin-top: 20px;
+     margin-left: 70px;
+     margin-right: 70px;
+     padding: 50px;
+     text-align: justify; 
+ }
+#box{
+    height:380px;
+    padding: 20px;
+    background-color:aqua;
+}
+#box1,#box2,#box3,#box4{
+    height:300px;
+    width:260px;
+    margin:10px;
+    margin-left: 20px;
+    float: left;
+    background-color: whitesmoke;
+}
+#boximg1{
+    height:250px;
+    width:260px;
+    float: left;
+}
+#box1,#box2,#box3,#box4:hover{
+    transform: rotateY(360deg);
+}
+#sbox{
+    height:380px;
+    padding: 20px;
+    background-color:aqua;
+}
+#sbox1,#sbox2,#sbox3,#sbox4{
+    height:300px;
+    width:260px;
+    margin:10px;
+    margin-left: 20px;
+    float: left;
+    background-color: whitesmoke;
+}
+#boximg2{
+    height:250px;
+    width:260px;
+    float: left;
+}
+#sbox1,#sbox2,#sbox3,#sbox4:hover{
+    transform: rotateY(360deg);
+}
+#tbox{
+    height:380px;
+    padding: 20px;
+    background-color:#135D80; 
+}
+#tbox1,#tbox2,#tbox3,#tbox4{
+    height:300px;
+    width:280px;
+    margin:10px;
+    margin-left: 20px;
+    float: left;
+    background-color: whitesmoke;
+}
+#boximg3{
+    height:250px;
+    width:260px;
+    float: left;
+}
+#box1,#box2,#box3,#box4:hover{
+    transform: rotateY(360deg);
+}
+ #about{
+    margin-top: 20px;
+     height: 420px;
+     font-family: 'Times New Roman', Times, serif;
+     background-color: whitesmoke;
+ }
+ #aboutheading{
+     margin-top: 15px;
+ }
+ #about1{
+     height:300px;
+     float: left;
+     
+     text-align: justify;
+     margin: 10px;
+     font-weight: 300;
+     font-size: 18px;
+     margin: 10px;
+     padding: 20px;
+ }
+ #aboutbanner{
+     height: 300px;
+     width: 300px;
+     justify-content: right;
+ }
+ #lower{
+    height:400px;
+    background-color: whitesmoke;
+    padding: 30px;
+    font-family: candara;
+}
+#row,#row2,#row3,#row4{
+    height: 290px;
+    width: 250px;
+    font-size: 20px;
+    font-family: candara;
+    margin: 20px;
+    float:left;
+    padding: 5px;
+    line-height: 35px;
+    /* background-color: aqua; */
+}
+ #footer{
+     height: 40px;
+     width: 97%;
+     background-color: black;
+     position: absolute;
+ }
+ #footer1{
+     position: relative;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     color: white;
+ }
+ #gallery{
+     height: 400px;
+     margin-top: 50px;
+ }
+ #gallery_img{
+     margin-top: 30px;
+     height: 200px;
+     width: 180px;
+     margin-left: 100px;
+     
+     align-items: center;
+ }
+ #SignUpForEmail{
+    width: 58%;
+    height: 350px;
+    margin: auto;
+    padding: 50px;
+}
+#SignUpForEmail h1{
+    font-size: 48px;
+    font-weight:900;
+}
+#SignUpForEmail h2{
+    font-weight: 800;
+    font-size: 28px;
+}
+#SignUpForEmail p{
+    color: black;
+    line-height: 25px;
+}
+#inputfield{
+    height:40px;
+    width: 850px;
+    font-size: 19px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-color: gray;
+    border-bottom: 1px solid;
+    outline: 0px;
+}
+#button1{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color:blue;
+    border-radius: 10px;
+}
+
+@media only  screen and (max-width:700px){
+    *{
+        margin: 0;
+        
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+     /* #container{
+         height: auto;
+         width:97%;
+         margin: auto;
+     } */
+     #logoline{
+         height: 120px;
+         display: flex;
+         align-items: center;
+         
+     }
+     #logo{
+         height: 80px;
+         width: 70px;
+         margin-left: 10px;
+     }
+     #logoline ul {
+         list-style: none;
+         padding: 10px;
+     }
+     
+     #logoline ul li {
+         margin-left: 5px;
+         display: inline;
+         font-weight: bold;
+         
+     }
+     
+     #logoline ul li a {
+         
+        margin-top: 30px;
+         text-decoration: none;
+         color: #0E2E50;
+     }
+     
+     #logoline ul li a:hover {
+         text-decoration: none;
+         color: crimson;
+     }
+     #button{
+         background-color: aqua;
+         border-top-right-radius: 8px;
+         border-bottom-left-radius: 8px;
+     }
+     #banner{
+         height: 400px;
+         margin-top: 10px !important;
+     }
+     #banner_img{
+         height: 350px;
+         width: 100%;
+         
+     }
+     #third{
+         margin-top: 20px;
+         margin-left: 70px;
+         margin-right: 70px;
+         padding: 50px;
+         text-align: justify; 
+     }
+    #box{
+        height:680px;
+        padding: 20px;
+        background-color:aqua;
+    }
+    #box1,#box2,#box3,#box4{
+        height:300px;
+        width:260px;
+        margin:10px;
+        margin-left: 20px;
+        float: left;
+        background-color: whitesmoke;
+    }
+    #boximg1{
+        height:250px;
+        width:260px;
+        float: left;
+    }
+    #box1,#box2,#box3,#box4:hover{
+        transform: rotateY(360deg);
+    }
+    #sbox{
+        height:680px;
+        padding: 20px;
+        background-color:aqua;
+    }
+    #sbox1,#sbox2,#sbox3,#sbox4{
+        height:300px;
+        width:260px;
+        margin:10px;
+        margin-left: 20px;
+        float: left;
+        background-color: whitesmoke;
+    }
+    #boximg2{
+        height:250px;
+        width:260px;
+        float: left;
+    }
+    #sbox1,#sbox2,#sbox3,#sbox4:hover{
+        transform: rotateY(360deg);
+    }
+    #tbox{
+        height:680px;
+        padding: 20px;
+        background-color:#135D80; 
+    }
+    #tbox1,#tbox2,#tbox3,#tbox4{
+        height:300px;
+        width:280px;
+        margin:10px;
+        margin-left: 20px;
+        float: left;
+        background-color: whitesmoke;
+    }
+    #boximg3{
+        height:250px;
+        width:260px;
+        float: left;
+    }
+    #box1,#box2,#box3,#box4:hover{
+        transform: rotateY(360deg);
+    }
+     #about{
+        margin-top: 20px;
+         height: 520px;
+         font-family: 'Times New Roman', Times, serif;
+         background-color: whitesmoke;
+     }
+     #aboutheading{
+         margin-top: 15px;
+     }
+     #about1{
+         height:300px;
+         float: left;
+         
+         text-align: justify;
+         margin: 10px;
+         font-weight: 300;
+         font-size: 18px;
+         margin: 10px;
+         padding: 20px;
+     }
+     #aboutbanner{
+         height: 300px;
+         width: 300px;
+         justify-content: right;
+     }
+     #lower{
+        height:800px;
+        background-color: whitesmoke;
+        padding: 30px;
+        font-family: candara;
+    }
+    #row,#row2,#row3,#row4{
+        height: 290px;
+        width: 250px;
+        font-size: 20px;
+        font-family: candara;
+        margin: 20px;
+        float:left;
+        padding: 5px;
+        line-height: 35px;
+        /* background-color: aqua; */
+    }
+     #footer{
+         height: 40px;
+         width: 97%;
+         background-color: black;
+         position: absolute;
+     }
+     #footer1{
+         position: relative;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+         color: white;
+     }
+     #gallery{
+         height: 400px;
+         margin-top: 50px;
+     }
+     #gallery_img{
+         margin-top: 30px;
+         height: 200px;
+         width: 180px;
+         margin-left: 100px;
+         
+         align-items: center;
+     }
+     #SignUpForEmail{
+        width: 58%;
+        height: 350px;
+        margin: auto;
+        padding: 10px;
+    }
+    #SignUpForEmail h1{
+        font-size: 48px;
+        font-weight:900;
+    }
+    #SignUpForEmail h2{
+        font-weight: 800;
+        font-size: 28px;
+    }
+    #SignUpForEmail p{
+        color: black;
+        line-height: 25px;
+    }
+    #inputfield{
+        height:40px;
+        width: 250px;
+        font-size: 19px;
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-color: gray;
+        border-bottom: 1px solid;
+        outline: 0px;
+    }
+    #button1{
+        width: 150px;
+        height: 50px;
+        border: none;
+        background-color:blue;
+        border-radius: 10px;
+    }
+}

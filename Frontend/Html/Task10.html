@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML-Task10</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend align="center"> <h1><u>Add product from</u></h1></legend>
+    <form action="#" method="get">
+        <table border="0" align="center" width="600" height="600" cellpadding="25" cellspacing="0">
+            <tr>
+                <td align="right">
+                    Product Name &nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <input type="text" name="pname" id="pname" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Product Quantity
+                </td>
+                <td>
+                    <input type="number" min="0" name="Qty" id="Qty" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Product Price &nbsp;<br> (per piece)&nbsp;
+                </td>
+                <td>
+                    <input type="number" min="0" name="Qty" id="Qty" required>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Payment Mode&nbsp;&nbsp;
+                </td>
+                <td>
+                    <select name="PaymentMode" id="PaymentMode">
+                        <option value="UPI">UPI</option>
+                        <option value="Net Banking">Net Banking</option>
+                        <option value="COD">COD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Type&nbsp;
+                </td>
+                <td>
+                    <input type="radio" name="Type" id="Type1" value="Type1" req>
+                    <label for="Type1">Import</label>
+                    <input type="radio" name="Type" id="Type2" value="Type2">
+                    <label for="Type2">Export</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Weight&nbsp;
+                </td>
+                <td>
+                    <input type="radio" name="Weight" id="Type1" value="Type1">
+                    <label for="Weight"><=50Kg</label>
+                            <input type="radio" name="Weight" id="Type2" value="Type2">
+                            <label for="Weight">>50Kg</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <pre><input type="submit" value="Add Product" required>    <input type="reset" value="Clear"></pre>
+                </td>
+            </tr>
+        </table>
+    </form>
+</fieldset>
+</body>
+</html>

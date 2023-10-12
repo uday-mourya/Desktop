@@ -1,0 +1,320 @@
+*{
+    margin: 0px;
+}
+#main{
+    height:auto;
+    width:100%;
+    margin:auto;
+}
+#header{
+    height:60px;
+    background-color:lightgreen;
+    z-index: 1;
+    position: sticky;
+}
+#logo{
+    height: 50px;
+    padding: 10px;
+    transition: 2s;
+    float:left;
+}
+ #header span  {
+    float: left;
+    margin-top: 15px;
+    margin-left: 100px;
+    color:black;
+    font-size: 25px;
+} 
+#header span a  {
+    float: left;
+    color:white;
+    text-decoration: none;
+} 
+#contentarea{
+    font-family: candara;
+    height:500px;
+    padding: 80px;
+    font-size: 20px;
+    text-align: justify;
+}
+#cont{
+    float: left;
+    font-size: 19px;
+    display: inline;
+    height: 300px;
+    width: 400px;
+    margin: 20px;
+    margin-top: 40px;
+}
+#Dog{
+    float: right;
+    height: 300px;
+    width: 350px;
+    margin-right: 50px;
+    margin-top: 35px;
+}
+
+#backim{
+    background-image: url(Image/1.jpg);
+    height: 400px;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#newsletter{
+    height: 400px;
+    
+    
+}
+#newsheading{
+    font-size: 32px;
+    font-family: candara;
+    color:  chartreuse ;
+    
+    margin-top: 0px;
+}
+#newsinput{
+    outline: 0px;
+    margin-top: 300px;
+    margin-left: 150px;
+    border:1px solid black;
+    height:40px;
+    width: 700px;
+    text-align: center;
+    font-size: 19px;
+    font-family: candara;
+    background-color: rgba(57, 228, 5, 0.4);
+    color: black;
+}
+#newsbtn{
+    font-family: candara;
+    height:42px;
+    width: 200px;
+    border:0px;
+    font-size: 20px;
+    background-color: crimson;
+    color: white;
+}
+
+#box{
+    height:750px;
+    padding: 20px;
+}
+#box1,#box2,#box3{
+  
+    height:350px;
+    width:330px;
+    margin:25px;
+    margin-left: 65px;
+    float: left;
+    border-radius: 50%;
+    transition: 1s;
+}
+#boximg{
+    height:300px;
+    width:260px;
+    float: left;
+}
+
+#sbox{
+    height:600px;
+    padding: 20px;
+    background-color:#CEFAC9 ; 
+}
+#sbox1,#sbox2,#sbox3,#sbox4{
+    height:450px;
+    width:250px;
+    margin:10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    float: left;
+    background-color: whitesmoke;
+}
+#boximg2{
+    height:300px;
+    width:300px;
+    float: left;
+}
+
+
+#lower{
+    height:400px;
+    background-color: whitesmoke;
+    padding: 30px;
+    font-family: candara;
+}
+#row,#row2,#row3,#row4{
+    height: 290px;
+    width: 250px;
+    font-size: 20px;
+    font-family: candara;
+    margin: 20px;
+    float:left;
+    padding: 5px;
+    line-height: 35px;
+    /* background-color: aqua; */
+}
+#footer{
+    height:30px;
+    padding: 5px;
+    font-family: candara;
+    background-color: azure;
+}
+
+@media only  screen and (max-width:700px) {
+    *{
+        margin: 0px;
+    }
+    #header{
+        height:60px;
+        background-color:lightgreen;
+    }
+    #logo{
+        margin-top: 20px;
+        height: 20px;
+        padding: 1px;
+        transition: 2s;
+        float:left;
+    }
+     #header span  {
+        float: left;
+        margin-top: 20px;
+        margin-left: 40px;
+        color:black;
+        font-size: 22px;
+    } 
+    #header span a  {
+        float: left;
+        color:black;
+    } 
+    #contentarea{
+        font-family: candara;
+        height:700px;
+        padding: 40px;
+        font-size: 20px;
+        text-align: justify;
+    }
+    #cont{
+        float: left;
+        font-size: 19px;
+        display: inline;
+        height: 300px;
+        width: 400px;
+        margin: 20px;
+        margin-top: 40px;
+        margin-left: 80px;
+    }
+    #Dog{
+        float: right;
+        height: 200px;
+        width: 350px;
+        margin-right: 120px;
+        margin-top: 35px;
+    }
+    
+    #backim{
+        background-image: url(Image/1.jpg);
+        height: 400px;
+        width: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    #newsletter{
+        height: 800px;      
+    }
+    #newsheading{
+        font-size: 32px;
+        font-family: candara;
+        color:  chartreuse ;
+        
+        margin-top: 0px;
+    }
+    #newsinput{
+        outline: 0px;
+        margin-top: 300px;
+        margin-left: 150px;
+        border:1px solid black;
+        height:40px;
+        width: 250px;
+        text-align: center;
+        font-size: 19px;
+        font-family: candara;
+        background-color: rgba(57, 228, 5, 0.4);
+        color: black;
+    }
+    #newsbtn{
+        font-family: candara;
+        height:42px;
+        width: 200px;
+        border:0px;
+        font-size: 20px;
+        background-color: crimson;
+        color: white;
+    }
+    
+    #box{
+        margin-top: 20px;
+        height:950px;
+        padding: 20px;
+    }
+    #box1,#box2,#box3{
+      
+        height:150px;
+        width:230px;
+        margin:25px;
+        margin-left: 15px;
+        padding: 30px;
+        float: left;
+    
+    }
+    #boximg{
+        height:200px;
+        width:260px;
+        float: left;
+    }
+    
+    #sbox{
+        height:800px;
+        padding: 20px;
+        background-color:#CEFAC9 ; 
+    }
+    #sbox1,#sbox2,#sbox3,#sbox4{
+        height:350px;
+        width:250px;
+        margin:10px;
+        margin-top: 20px;
+        margin-left: 30px;
+        float: left;
+        background-color: whitesmoke;
+    }
+    #boximg2{
+        height:200px;
+        width:200px;
+        float: left;
+    }
+    
+    
+    #lower{
+        height:720px;
+        background-color: whitesmoke;
+        padding: 30px;
+        font-family: candara;
+    }
+    #row,#row2,#row3,#row4{
+        height: 290px;
+        width: 250px;
+        font-size: 20px;
+        font-family: candara;
+        margin: 20px;
+        float:left;
+        padding: 5px;
+        line-height: 35px;
+        /* background-color: aqua; */
+    }
+    #footer{
+        height:30px;
+        padding: 5px;
+        font-family: candara;
+        background-color: azure;
+    }
+}

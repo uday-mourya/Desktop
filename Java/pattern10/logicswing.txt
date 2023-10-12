@@ -1,0 +1,44 @@
+ private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+      try{
+           if(name1.getText().equals("")||pass1.getText().equals("")||pass3.getText().equals("")||captcha.getText().equals(""))
+            {
+                JOptionPane.showMessageDialog(null,"Please fill All Detail");
+            }
+//       else if(pass1.getText().equals(pass3 .getText()))
+//        {
+//             JOptionPane.showMessageDialog(null,"Pass Not Match");
+//        }
+//       else if(pass1.getText().equals(pass3.getText()))
+//       {
+//          JOptionPane.showMessageDialog(null, "Pass Not Match ");
+//       }
+       else 
+        {
+             if(pass1.getText().equals(pass3.getText())){
+                if(cap.getText().equals(captcha.getText())){
+                    
+                    
+                    
+                     if(name1.getText().contains("Uday")&&pass1.getText().contains("12345678")){
+                            JOptionPane.showMessageDialog(null,"Login Successfull");
+                            new Dashboardnew1().setVisible(true);
+                            dispose();
+                        }
+                    else
+                    {
+                        JOptionPane.showMessageDialog(null,"wrong username or password","Message",JOptionPane.ERROR_MESSAGE);
+                    }
+                } 
+                else{
+                 JOptionPane.showMessageDialog(null,"Captcha Not Match");
+                }
+             }
+            else{
+                 JOptionPane.showMessageDialog(null,"Password Not Match");
+             }
+        }
+      }
+      catch(Exception exp){
+                        
+                    }
+    }                                        
