@@ -1,7 +1,11 @@
-1 . what is operatory
-2. types of op
-3.what is 
-4.symbolic op
+1 . what is operator
+2. Types of op
+	i.Unary
+	ii.binary
+	iii.ternary
+   
+3.what is expresion in java
+4.symbolic operator
 6.arithmetic
 types of arithmetic op
 5.what is named op
@@ -13,13 +17,13 @@ resul of relation op when it is used for looping or branching sttment
 how many types of logical op
 ternary op
 wh dot op
-
-7.which java op which
+8.Difference between right shift operator & unsigned operator
+7.which java op is right associative
 what i intance of operator 
 how many no .of op present in java
 
 
-loop
+---loop---
 
 how to define infinite loop
 what is default switch case
@@ -28,4 +32,4 @@ what types of loop present in java
 what is inhanced loop.
 how can new exit antycapadely 
 what is different unleveled and levelred bag statement
-bb
+what is the difference continue

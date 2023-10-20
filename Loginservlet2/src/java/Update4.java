@@ -1,3 +1,4 @@
+import jakarta.servlet.RequestDispatcher;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -54,12 +55,16 @@ public class Update4 extends HttpServlet {
               {
                      response.setContentType("text/html");
                      out.println("<h4><font color='green'>Update successful</font></h4>");
+                      RequestDispatcher rd = request.getRequestDispatcher("Profileedit");
+                    rd.include(request, response);
 //                     response.sendRedirect("Dashboard");
               }
               else
               {
                response.setContentType("text/html");
                out.println("<h2><font color='red'>Update Failed</font><h2>");
+                RequestDispatcher rd = request.getRequestDispatcher("Profileedit");
+                    rd.include(request, response);
               }
 
             } catch (ClassNotFoundException ex) {

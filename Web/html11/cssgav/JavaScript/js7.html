@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zoom In/Out Image</title>
+    <style>
+        #zoom-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        #zoomed-image {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        #zoomed-image.zoomed {
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the Image to Zoom In/Out</h1>
+    <div id="zoom-container">
+        <img id="zoomed-image" src="img-1.png" alt="Zoomable Image">
+    </div>
+
+    <script>
+        const zoomedImage = document.getElementById('zoomed-image');
+        let isZoomed = false;
+
+        zoomedImage.addEventListener('click', function () {
+            if (isZoomed) {
+                zoomedImage.classList.remove('zoomed');
+                isZoomed = false;
+            } else {
+                zoomedImage.classList.add('zoomed');
+                isZoomed = true;
+            }
+        });
+    </script>
+</body>
+</html>

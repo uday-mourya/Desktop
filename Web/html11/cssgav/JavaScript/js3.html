@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Circles with Color Chooser</title>
+  <style>
+    .circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 10px;
+      display: inline-block;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    script{
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+ <center> <h1>Color Circles</h1></center>
+  <input type="color" id="colorChooser">
+  <div class="circle" id="circle1"></div>
+  <div class="circle" id="circle2"></div>
+  <div class="circle" id="circle3"></div>
+  <div class="circle" id="circle4"></div>
+  <div class="circle" id="circle5"></div>
+  <script>
+    var colorChooser = document.getElementById("colorChooser");
+    var circles = document.querySelectorAll(".circle");
+    circles.forEach(circle => {
+      circle.addEventListener("click", () => {
+        circle.style.backgroundColor = colorChooser.value;
+      });
+    });
+  </script>
+</body>
+</html>

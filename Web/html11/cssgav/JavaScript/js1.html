@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Color changer</title>
+  <style>
+    #colorDiv {
+        margin: 100px;
+      width: 250px;
+      height: 250px;
+      background-color: #ccc;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    button
+    {
+        margin: 100px;
+        margin-top: 20px;
+        background-color: rgb(227, 126, 24);
+        color: aliceblue;
+        font-size: 16px;
+        border: none;
+        border-radius: 15px;
+        width: 120px;
+        height: 35px;
+        padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="colorDiv"></div>
+  <button onclick="changeColor('red')">Red</button>
+  <button onclick="changeColor('blue')">Blue</button>
+  <button onclick="changeColor('green')">Green</button>
+  <script>
+    function changeColor(color) {
+      var div = document.getElementById("colorDiv");
+      div.style.backgroundColor = color;
+    }
+  </script>
+</body>
+</html>
+

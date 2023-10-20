@@ -124,6 +124,14 @@
         <servlet-name>UpdateTask</servlet-name>
         <servlet-class>UpdateTask</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>loginlogin</servlet-name>
+        <servlet-class>loginlogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>login11</servlet-name>
+        <servlet-class>login11</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>database</servlet-name>
         <url-pattern>/database</url-pattern>
@@ -247,5 +255,13 @@
     <servlet-mapping>
         <servlet-name>UpdateTask</servlet-name>
         <url-pattern>/UpdateTask</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginlogin</servlet-name>
+        <url-pattern>/loginlogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>login11</servlet-name>
+        <url-pattern>/login11</url-pattern>
     </servlet-mapping>
 </web-app>

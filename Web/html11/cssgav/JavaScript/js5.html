@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Indore Jayeka</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .menu-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .menu-item input[type="radio"] {
+      margin-right: 8px;
+      align-items: center;
+    }
+    #submit-btn {
+      background-color: #eac130;
+      height: 50px;
+      width: 100px;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+   <center> <h1>My Hotel menu</h1></center>
+  <form align="center">
+    <div class="menu-item" align="center">
+      <input type="radio" id="menu1" name="menu" value="Kachori">
+      <label for="menu1">Coffe</label>
+    </div>
+    <div class="menu-item">
+      <input type="radio" id="menu2" name="menu" value="Poha">
+      <label for="menu2">Chocolate</label>
+    </div>
+    <div class="menu-item">
+      <input type="radio" id="menu3" name="menu" value="Samosa">
+      <label for="menu3">Icecreame</label>
+    </div>
+    <div class="menu-item">
+      <input type="radio" id="menu4" name="menu" value="jalebi">
+      <label for="menu4">Cookies</label>
+    </div>
+    <div class="menu-item">
+      <input type="radio" id="menu5" name="menu" value="Imarti">
+      <label for="menu5">Cake</label>
+    </div>
+    <button id="submit-btn" type="button" onclick="myOrder()">Order Now</button>
+  </form>
+  <script>
+    function myOrder() {
+      var selectedCoffee = document.querySelector('input[name="menu"]:checked');
+      if (selectedCoffee) {
+        alert("Are bhiya  : " + selectedCoffee.value + "  khaoge Good Yaar");
+      } else {
+        alert("Aree bhiya kuchh select to karo");
+      }
+    }
+  </script>
+</body>
+</html>
