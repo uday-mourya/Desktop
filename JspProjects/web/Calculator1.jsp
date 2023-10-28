@@ -10,8 +10,17 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <style>
+            table {
+                 border-radius: 20px;
+                 background-color:lightgrey ;
+                 border: 3px solid lawngreen;
+            }
+            
+        </style>    
     </head>
     <body>
+         <center> <h2>My-Calculator-1</h2></center>
         <form action="">
             <center>
                 <table border="1" cellspacing="0" height="150px" width="350px">
@@ -20,7 +29,7 @@
                         <td align="center"><input type="text" placeholder="Enter First Number" name="n1"></td>
                     </tr>
                     <tr>
-                        <td align="center"><label>Enter First Number</label></td>
+                        <td align="center"><label>Enter Second Number</label></td>
                         <td align="center"><input type="text"  placeholder="Enter Second Number" name="n2"></td></tr>
                     <tr>
                         <td colspan="2" align="center">

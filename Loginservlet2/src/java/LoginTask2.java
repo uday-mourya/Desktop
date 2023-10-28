@@ -55,7 +55,7 @@ public class LoginTask2 extends HttpServlet {
 //                            session.setAttribute("email", email);
 //                            session.setAttribute("name",rs.getString("name"));
                     session.setAttribute("rs", rs);
-                    response.sendRedirect("Dashboard");
+                    response.sendRedirect("Dashoard2");
                 } 
                 else {
                     out.print(" \"This User Not exists\"");

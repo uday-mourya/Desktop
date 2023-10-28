@@ -95,9 +95,9 @@ public class Updatepass extends HttpServlet {
             out.println("</div>");
             out.println("<div id='nav'>");
             out.println("<ul>");
-            out.println("<li><a  href='Dashboard'>Home</a></li>");
-            out.println("<li><a  href='Dashboard'>About Us</a></li>");
-            out.println("<li><a  href='Dashboard'>Gallery</a></li>");
+            out.println("<li><a  href='Dashoard2'>Home</a></li>");
+            out.println("<li><a  href='Dashoard2'>About Us</a></li>");
+            out.println("<li><a  href='Dashoard2'>Gallery</a></li>");
 //            out.println("<td>"+"<a href='Editor?Email="+rs.getString("Email")+"'>Edit</a>"+"</td>");
             out.println("<li><a href='Profile5'>Profile</a></li>");
              out.println("<li><a href='Updatepass'>UpdatePassword</a></li>");

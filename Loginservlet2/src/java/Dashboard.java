@@ -99,7 +99,7 @@ public class Dashboard extends HttpServlet {
            Object name= rs.getString("Name");
            out.println(name);
            Object email=session.getAttribute("Email");
-//             out.println(email);
+             out.println(email);
 //             Object name=session.getAttribute("Name");
 //             if(email!=null)
 //             {

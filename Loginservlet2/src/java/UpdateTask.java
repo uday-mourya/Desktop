@@ -61,7 +61,7 @@ public class UpdateTask extends HttpServlet {
                             int count = ps.executeUpdate();
                             
                             if (count > 0) {
-                                response.sendRedirect("Dashboard");
+                                response.sendRedirect("Dashoard2");
                             } else {
                                 response.sendRedirect("Updatepass?error=update-failed");
                             }

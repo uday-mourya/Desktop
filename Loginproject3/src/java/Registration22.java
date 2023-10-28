@@ -92,7 +92,7 @@ public class Registration22 extends HttpServlet {
                         out.print("Enter Father Name");
                     out.print("</td>");
                     out.print("<td align='center'>");
-                        out.print("<input type='text'pattern=\"[A-Za-z]+\" name='fname' required>");
+                        out.print("<input type='text' pattern=\"[A-Za-z]+\" name='fname' required>");
                     out.print("</td>");
                 out.print("</tr>"); 
                 out.print("<tr>");
