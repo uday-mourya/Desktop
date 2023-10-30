@@ -1,7 +1,7 @@
 <%-- 
     Document   : Registration
     Created on : Oct 25, 2023, 3:55:06 PM
-    Author     : Lenovo
+    Author     : Dell
 --%>
 <%@ page import="java.sql.*" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -82,7 +82,8 @@
 
     .input-field input {
       width: 100%;
-      height: 20px;
+      height: 15px;
+       margin: 8px 0;
       background: transparent;
       border: none;
       outline: none;
@@ -182,7 +183,7 @@ function Movalidate()
             else{
                 var reg =/^[6789][0-9]{9}/;
                 if(reg.test(mobile.value)){
-                    mdisplay.innerHTML="Mobile number is required";
+                    mdisplay.innerHTML="Valid";
                     mdisplay.style.color="Green";   
                     return true;
                 }
@@ -216,7 +217,7 @@ function Movalidate()
             var pass= document.getElementById("pass");
             var pdisplay = document.getElementById("pdisplay");
             if(pass.value.trim()==""){
-                pdisplay.innerHTML="Name Required";
+                pdisplay.innerHTML="Password Required";
                 pdisplay.style.color="red";
                 return false;
             }
@@ -243,32 +244,32 @@ function Movalidate()
       <h2>Registration</h2>
       <div class="input-field">
         <input  onkeyup="namevalidate()"id="name" type="text"  name="name" >
-        <span id="udisplay" style="color:red; font-size: 15px;">*</span>
+        <span id="udisplay" style="color:red; font-size: 14px;">*</span>
         <label>Enter your Name</label>
       </div>
       <div class="input-field">
         <input  onkeyup="Fvalidate()" id="Fname" type="text" name="fname" >
-        <span id="fdisplay" style="color:red; font-size: 15px;"></span>
+        <span id="fdisplay" style="color:red; font-size: 14px;"></span>
         <label>Enter Father Name</label>
       </div>
       <div class="input-field">
         <input onkeyup="validateEmail()" id="email"  type="text" name="email">
-       <span id="edisplay" style="color:red; font-size: 15px;"></span>
+       <span id="edisplay" style="color:red; font-size: 14px;"></span>
         <label>Enter your Email</label>
     </div>
       <div class="input-field">
           <input onkeyup=" passValidate()" id="pass" type="password" name="pass" >
-        <span id="pdisplay" style="color:red; font-size: 15px;"></span>
+        <span id="pdisplay" style="color:red; font-size: 14px;"></span>
         <label>Enter your password</label>
       </div>
       <div class="input-field">
         <input onkeyup=" passValidate()" id="pass" type="password" name="cpass">
-       <span id="pdisplay" style="color:red; font-size: 15px;"></span>
+       <span id="pdisplay" style="color:red; font-size: 14px;"></span>
         <label>Confirm password</label>
       </div>
       <div class="input-field">
         <input   id="mobile" onkeyup="Movalidate()" maxlength="10" type="text"  name="mob">
-        <span id="mdisplay" style="color:red; font-size: 15px;">*</span>
+        <span id="mdisplay" style="color:red; font-size: 14px;">*</span>
         <label> Mobile Number</label>
     </div>
       <button type="submit" onsubmit="valid()" name="submit" value="submit">Register</button>
@@ -328,9 +329,12 @@ function Movalidate()
                     out.println("Failed to insert data.");
                 }
             }
-        } catch (Exception e) {
+        } 
+        catch (Exception e) 
+        {
             out.println("Error: " + e.getMessage());
-        } finally {
+        } 
+        finally {
             // Close resources in the reverse order of their creation
             try {
                 if (rs != null) rs.close();

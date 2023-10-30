@@ -258,7 +258,7 @@ footer a:hover {
             <li><a href="#">About</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="logout.jsp">Logout</a></li>
+            <li><a href="Logout.jsp">Logout</a></li>
             <li><a href="update.jsp">Profile</a></li>
         </ul>
         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
@@ -376,7 +376,7 @@ footer a:hover {
 
 <% } else { %>
     <%
-        response.sendRedirect("Login3.jsp");
+        response.sendRedirect("Login.jsp");
     %>
 <% }}
 catch(Exception e){

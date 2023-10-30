@@ -14,9 +14,10 @@
         response.setHeader("Cache-Control", "NO-Store");
 //        HttpSession session1 = request.getSession();
         ResultSet rs = (ResultSet) session.getAttribute("rs");
-           String name = rs.getString("Name");
+          
         // Check if the 'rs' ResultSet and 'email' attribute are not null
         if (rs != null) {
+         String name = rs.getString("Name");
 %>
 
 <!DOCTYPE html>

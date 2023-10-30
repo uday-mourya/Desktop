@@ -1,3 +1,8 @@
+<%-- 
+    Document   : Adminlogin
+    Created on : Oct 30, 2023, 7:45:14 AM
+    Author     : dell
+--%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*" %>
 <%@ page import="java.io.*" %>
@@ -118,16 +123,16 @@
                     <input type='text' name='email' placeholder='Email'/>
                     <input type='password' name='pass' placeholder='password'/>
                     <button type="submit">login</button>
-                    <p class='message'>Not registered? <a href='Registration3.jsp'>Create an account</a></p>
+                    
                 </form>
             </div>
         </div>
     <%
         String email = request.getParameter("email");
         String password = request.getParameter("pass");
-        String name = null;
-        String fname = null;
-        String contact=null;
+//        String name = null;
+//        String fname = null;
+//        String contact=null;
 
         if (email != null && !email.isEmpty() && password != null && !password.isEmpty()) {
             Connection con = null;
@@ -140,7 +145,7 @@
                 String id = "root";
                 String pass = "udaysql@350";
                 con = DriverManager.getConnection(path, id, pass);
-                String sql = "Select * from reginfo where email=? and password=?";
+                String sql = "Select * from Admin3 where email=? and password=?";
                 ps = con.prepareStatement(sql);
                 ps.setString(1, email);
                 ps.setString(2, password);
@@ -150,17 +155,12 @@
                 
 
                 if (rs.next()) {       
-                    name =rs.getString("Name");
-                    fname=rs.getString("Fname");
-                    contact=rs.getString("Contact");
+//                    name =rs.getString("Name");
+//                    fname=rs.getString("Fname");
+//                    contact=rs.getString("Contact");
                      session.setAttribute("rs",rs);
-//                    session.setAttribute("name",name);
-//                    session.setAttribute("fname",fname);
-//                    session.setAttribute("email",email);
-//                    session.setAttribute("password",password);
-//                    session.setAttribute("contact",contact);
                     out.println("Welcome to Dashboard");
-                    response.sendRedirect("Dashboard.jsp");
+                    response.sendRedirect("Dashboard33.jsp");
                 } else {
                     out.println("<center><h3>This User Not Exists</h3></center>");
                 }

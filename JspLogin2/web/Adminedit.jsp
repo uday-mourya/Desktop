@@ -182,7 +182,7 @@ if (rs != null) {
                         <div class="p-3 py-5">
                             <div class="d-flex justify-content-between align-items-center mb-3">
                                 <div class="d-flex flex-row align-items-center back"><i class="fa fa-long-arrow-left mr-1 mb-1"></i>
-                                    <a href="Dashboard.jsp" ><h6>Back to home</h6></a>
+                                    <a href="Dashboard33.jsp" ><h6>Back to home</h6></a>
                                 </div>
 
                             </div>
@@ -194,7 +194,7 @@ if (rs != null) {
                             </div>
                             <div class="row mt-3">
                                 <div class="col-md-3">Father Name</div>
-                                <div class="col-md-6"><input onkeyup="Fvalidate()" id="Fname" type="text" class="form-control"  value="<%= Fname %>" name="fname" ></div>
+                                <div class="col-md-6"><input onkeyup="Fvalidate()" id="Fname"type="text" class="form-control"  value="<%= Fname %>" name="fname" ></div>
                                 <span class="span1" id="fdisplay" style="color:red"></span>
                             </div>
                             <div class="row mt-3">
@@ -231,7 +231,7 @@ if (rs != null) {
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/server", "root", "udaysql@350");
 
-        String sql1 = "update reginfo set Name = ?, FName = ?, Email = ?, Contact = ? where UserId = ?";
+        String sql1 = "update Admin3 set Name = ?, FName = ?, Email = ?, Contact = ? where UserId = ?";
         PreparedStatement ps1 = con.prepareStatement(sql1);
 
         ps1.setString(1, name1);
@@ -244,7 +244,7 @@ if (rs != null) {
         int i = ps1.executeUpdate();
 
         if (i > 0) {
-        response.sendRedirect("Dashboard.jsp");
+        response.sendRedirect("Dashboard33.jsp");
         } else {
         out.print("Failed to update.");
         }

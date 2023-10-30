@@ -181,7 +181,7 @@ function Movalidate()
                 <div class="p-3 py-5">
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <div class="d-flex flex-row align-items-center back"><i class="fa fa-long-arrow-left mr-1 mb-1"></i>
-                           <a href="Dashboard.jsp" ><h6>Back to home</h6></a>
+                           <a href="Dashboard33.jsp" ><h6>Back to home</h6></a>
                         </div>
                         
                     </div>
@@ -203,7 +203,7 @@ function Movalidate()
                     </div>
 <!--                    <div class="mt-5 text-right"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>-->
                     <div class="row mt-5">
-                            <div class="col-md-4"><a  onclick="return confirmEdit2();" href="Editprofile.jsp" ><h6>Edit Profile</h6></a></div>
+                            <div class="col-md-4"><a  onclick="return confirmEdit2();" href="Adminedit.jsp" ><h6>Edit Profile</h6></a></div>
                             <div class="col-md-4"><a  onclick="return confirmEdit();" href="Updatepassword.jsp" ><h6>Update Password</h6></a></div>
                         
                           
