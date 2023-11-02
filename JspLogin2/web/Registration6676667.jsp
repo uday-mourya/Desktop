@@ -1,8 +1,9 @@
 <%-- 
-    Document   : Registration
-    Created on : Oct 25, 2023, 3:55:06 PM
-    Author     : Dell
+    Document   : Registration6676667
+    Created on : Oct 30, 2023, 4:29:54 PM
+    Author     : dell
 --%>
+
 <%@ page import="java.sql.*" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
@@ -212,58 +213,38 @@ function Movalidate()
                 return true;
             }
         }
-        
-        
-    function passValidate() {
-        var pass = document.getElementById("pass");
-        var confirmPass = document.getElementById("confirmPass");
-        var pdisplay = document.getElementById("pdisplay");
-
-        if (pass.value.trim() === "" || confirmPass.value.trim() === "") {
-            pdisplay.innerHTML = "Passwords are required";
-            pdisplay.style.color = "red";
-            return false;
-        } 
-         else {
-            var reg = /^(?=.+?[0-9])(?=.+[A-Z])(?=.+?[a-z])(?=.+?[~!@#$%^&*()-+]).{8,}$/;
-            if (reg.test(pass.value)) {
-                pdisplay.innerHTML = "Valid";
-                pdisplay.style.color = "green";
-                return true;
-            } else {
-                pdisplay.innerHTML = "Please enter at least one number, uppercase, lowercase, special character, and a minimum of 8 characters";
-                pdisplay.style.color = "red";
+ function passValidate()
+        {
+            var pass= document.getElementById("pass");
+            var pdisplay = document.getElementById("pdisplay");
+            if(pass.value.trim()==""){
+                pdisplay.innerHTML="Password Required";
+                pdisplay.style.color="red";
                 return false;
             }
-        }
-    }
-    function passValidate2() {
-        var pass = document.getElementById("pass");
-        var confirmPass = document.getElementById("confirmPass");
-        var pdisplay = document.getElementById("pdisplay");
-
-        if (pass.value.trim() === "" || confirmPass.value.trim() === "") {
-            pdisplay.innerHTML = "Passwords are required";
-            pdisplay.style.color = "red";
-            return false;
-        } else if (pass.value !== confirmPass.value) {
-            pdisplay.innerHTML = "Passwords do not match";
-            pdisplay.style.color = "red";
-            return false;
-        } else {
-            var reg = /^(?=.+?[0-9])(?=.+[A-Z])(?=.+?[a-z])(?=.+?[~!@#$%^&*()-+]).{8,}$/;
-            if (reg.test(pass.value)) {
-                pdisplay.innerHTML = "Valid";
-                pdisplay.style.color = "green";
-                return true;
-            } else {
-                pdisplay.innerHTML = "Please enter at least one number, uppercase, lowercase, special character, and a minimum of 8 characters";
-                pdisplay.style.color = "red";
-                return false;
-            }
-        }
-    }
- 
+            else{
+                var reg =/^(?=.+?[0-9])(?=.+[A-Z])(?=.+?[a-z])(?=.+?[~!@#$%^&*()-+]).{8,}$/;
+                if(reg.test(pass.value)){
+                    pdisplay.innerHTML="Valid";
+                    pdisplay.style.color="Green";   
+                    return true;
+                }
+                else if {
+                     var pass= document.getElementById("pass");
+                     var pass= document.getElementById("cpass");
+                     var pdisplay = document.getElementById("pdisplay");
+                     if(pass===cpass){
+                         
+                     }
+                }
+                else{
+                   pdisplay.innerHTML="Please enter one character,no,symbol and min 8";
+                   pdisplay.style.color="red";
+                    return false;
+                }
+            }
+        }
+        
 </script>
 </head>
 <body>
@@ -291,8 +272,8 @@ function Movalidate()
         <label>Enter your password</label>
       </div>
       <div class="input-field">
-        <input onkeyup="passValidate2()" id="confirmPass" type="password" name="cpass">
-       <span id="pdisplay2" style="color:red; font-size: 14px;"></span>
+        <input onkeyup=" passValidate()" id="cpass" type="password" name="cpass">
+       <span id="pdisplay" style="color:red; font-size: 14px;"></span>
         <label>Confirm password</label>
       </div>
       <div class="input-field">

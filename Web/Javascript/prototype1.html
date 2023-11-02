@@ -1,0 +1,12 @@
+<script>
+    function operation(x,y){
+        this.x=x;
+        this.y=y;
+    
+    this.showdetails=function(){
+        document.write("<br>Addition="+this.x+this.y);
+    }
+    }
+    var obj=new operation(10,10);
+    obj.showdetails();
+</script>
