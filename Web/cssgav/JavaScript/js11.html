@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function changeColor(color){
+            var bodyElement = document.getElementById("display");
+            bodyElement.style.backgroundColor = color;
+        }
+    </script>
+</head>
+
+<body id="display">
+    <center>
+        <button  onclick="changeColor('Red')">Red</button>    
+    <button  onclick="changeColor('Green')">Green</button>    
+    <button  onclick="changeColor('Blue')">Blue</button> 
+    </center>   
+</body>
+</html>

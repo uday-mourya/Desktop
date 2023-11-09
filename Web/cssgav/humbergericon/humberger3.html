@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="humberger3.css"></head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Your Logo</div>
+            <div id="hamburger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="offcanvas" id="offcanvas">
+        <div class="close-icon" id="close-icon">✕</div>
+        <ul class="offcanvas-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const hamburgerMenu = document.getElementById("hamburger-menu");
+        const offcanvas = document.getElementById("offcanvas");
+        const closeIcon = document.getElementById("close-icon");
+        const menu = document.querySelector(".menu");
+
+        hamburgerMenu.addEventListener("click", () => {
+            offcanvas.classList.add("active");
+            closeIcon.style.display = "block";
+        });
+
+        closeIcon.addEventListener("click", () => {
+            offcanvas.classList.remove("active");
+            closeIcon.style.display = "none";
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 768) {
+                offcanvas.classList.remove("active");
+                closeIcon.style.display = "none";
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Selection</title>
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product List</h1>
+    <ul>
+        <li>
+            <input type="checkbox" id="product1"> Product 1
+        </li>
+        <li>
+            <input type="checkbox" id="product2"> Product 2
+        </li>
+        <li>
+            <input type="checkbox" id="product3"> Product 3
+        </li>
+        <li>
+            <input type="checkbox" id="product4"> Product 4
+        </li>
+        <li>
+            <input type="checkbox" id="product5"> Product 5
+        </li>
+    </ul>
+
+    <h2>Selected Products</h2>
+    <div id="card-container"></div>
+    <div id="total-value">Total Value: 0</div>
+
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const cardContainer = document.getElementById('card-container');
+        const totalValueElement = document.getElementById('total-value');
+        let totalValue = 0;
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                updateCard();
+            });
+        });
+
+        function updateCard() {
+            cardContainer.innerHTML = '';
+            totalValue = 0;
+
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    // const productID = checkbox.id;
+                    const productName = checkbox.parentElement.textContent.trim();
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.textContent = productName;
+                    // cardContainer.appendChild(card);
+                    totalValue += 1; 
+                }
+            });
+
+            totalValueElement.textContent = `Total Value: ${totalValue}`;
+        }
+    </script>
+</body>
+</html>

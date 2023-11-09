@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Favicons -->
+    <link href="assets/img/logo.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="CustomerTransaction.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+          <span class="d-none d-lg-block">Swastik</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          
+
+    <!-- ======= Sidebar ======= -->
+
+    <aside id="sidebar" class="sidebar " style="padding-top: 20px;">
+      <ul class="sidebar-nav" id="sidebar-nav "style="padding-top: 20px;>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+        <li class="nav-item" >
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#components-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-menu-button-wide"></i><span>Customer </span>
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="components-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          
+          >
+            <li>
+              <a href="CustumerTable.html">
+                <i class="bi bi-circle"></i><span>Customer</span>
+              </a>
+            </li>
+            <li>
+              <a href="Transactiontable.html">
+                <i class="bi bi-circle"></i><span>Transaction Record</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Components Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#forms-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-journal-text"></i><span>Request</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="forms-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="UpdationRecord.html">
+                <i class="bi bi-circle"></i><span>Updation Request</span>
+              </a>
+            </li>
+            <li>
+              <a href="forms-elements.html">
+                <i class="bi bi-circle"></i><span>Activation Request</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- End Forms Nav -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-layout-text-window-reverse"></i
+            ><span> Reports</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul
+            id="tables-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <li>
+              <a href="CustmerTransaction.html">
+                <i class="bi bi-circle"></i><span>Customer Transaction</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="DailyLedger.html"> <i class="bi bi-circle"></i><span>Daily Ledger</span> </a>
+            </li>
+            
+            <li>
+              <a href="#"> <i class="bi bi-circle"></i><span>Civil Records</span> </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            data-bs-target="#tables11-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <!-- <i class="bi bi-layout-text-window-reverse"></i
+            ><span> Support</span
+            ><i class="bi bi-chevron-down ms-auto"></i>
+          </a> -->
+          <ul
+            id="tables11-nav"
+            class="nav-content collapse"
+            data-bs-parent="#sidebar-nav"
+          >
+            <!-- <li>
+              <a href="MySupport.html">
+                <i class="bi bi-circle"></i><span>Support</span>
+              </a>
+            </li> -->
+            <li>
+              </li>
+              </ul>
+              </li>
+            </aside> 
+              
+              
+              <!-- <a href="tables-data.html">
+                <i class="bi bi-circle"></i><span>Employee List</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"> <i class="bi bi-circle"></i><span>Report</span> </a>
+            </li>
+          </ul>
+        </li>-->
+        <button style=" background-color:#194086; color:white; margin-left:-20;"><a>Logout</a></button>
+        <p><b> Employee id :</b>***3949</p></br>
+
+        <!-- <li class="nav-heading">Pages</li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="users-profile.html">
+            <i class="bi bi-person"></i>
+            <span>Profile</span>
+          </a>
+        </li> --> 
+        <!-- End Profile Page Nav -->
+
+        <!-- <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-faq.html">
+            <i class="bi bi-question-circle"></i>
+            <span>Reaview</span>
+          </a>
+        </li>
+        <!-- End F.A.Q Page Nav -->
+
+        <!-- <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-contact.html">
+            <i class="bi bi-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+        <!-- End Contact Page Nav -->
+
+        <!-- <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-register.html">
+            <i class="bi bi-card-list"></i>
+            <span>Register</span>
+          </a>
+        </li> -->
+        <!-- End Register Page Nav -->
+<!-- 
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-login.html">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span>Login</span>
+          </a>
+        </li>
+      </ul>
+    </aside> --> 
+    <!-- End Sidebar-->
+  </ul>
+</nav>
+</header>
+    
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  <!-- </body>
+</html> -->
+
+
+    <script src="script.js"></script>
+    <td>
+    <div class="row border p-4" style=" width: 60rem; margin-top: 90px; margin-left:310px;"id="first">
+        <div class="col-md-5">
+            <p class="6">Customer id:</p>
+            <input type="" >
+            <pre>
+
+            </pre>
+          <input type="date" class="form-control" placeholder="starting date" aria-label="First name">
+        </div>
+        <div class="col-md-5">
+            <p class="6">Account no:</p>
+            <input type="" >
+            <pre>
+   
+            </pre>
+          <input type="date" class="form-control" placeholder="current date" aria-label="Last name">
+        </div>
+       <button  id="search" style="background-color: #194086; margin-top:130px; color:white;  ;width:100px; height: 30px;">Search</button>
+      </div>
+
+      
+
+
+    <div class="container-fluid border"id="search" style="margin-top: 20px;margin-left:20rem; width:60rem;">
+        <h5>Daily Legdger</h5>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Trans.Date</th>
+                <th scope="col">Customer-id</th>
+                <th scope="col">Services</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Staus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <!-- <th scope="row"></th> -->
+                <td>03/05/2023</td>
+                <td>****4848</td>
+                <td>Recharge</td>
+                <td>579</td>
+                <td>Success</td>
+              </tr>
+              <tr>
+                <!-- <th scope="row"></th> -->
+                <td>03/05/2023</td>
+                <td>****4848</td>
+                <td>Credit</td>
+                <td>4000</td>
+                <td>Reject</td>
+              </tr>
+              <tr>
+                <!-- <th scope="row"></th> -->
+                <td>03/05/2023</td>
+                <td>****4848</td>
+                <td>Debit</td>
+                <td>10,000</td>
+                <td>Success</td>
+                </tr>
+              <tr>
+                <!-- <th scope="row"></th> -->
+                <td>03/05/2023</td>
+                <td>****4848</td>
+                <td>Recharger</td>
+                <td>479</td>
+                <td>Success</td>
+              </tr>
+              <tr>
+                <!-- <th scope="row"></th> -->
+                <td>03/05/2023</td>
+                <td>****4848</td>
+                <td>Credit</td>
+                <td>3000</td>
+                <td>Success</td>
+              </tr>
+              <tr>
+                <!-- <th scope="row"></th> -->
+                <td>03/05/2023</td>
+                <td>****4848</td>
+                <td>Bill Payement</td>
+                <td>900</td>
+                <td>Reject</td>
+              </tr>
+              <tr>
+                <!-- <th scope="row"></th> -->
+                <td>03/05/2023</td>
+                <td>****4848</td>
+                <td>Recharge</td>
+                <td>789</td>
+                <td>Success</td>
+              </tr>
+              <tr>
+                <!-- <th scope="row"></th> -->
+                <td>03/05/2023</td>
+                <td>****4848</td>
+                <td>Debit</td>
+                <td>1000</td>
+                <td>Reject</td>
+              </tr>
+            
+          </table>
+    </div>
+
+   
+      <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

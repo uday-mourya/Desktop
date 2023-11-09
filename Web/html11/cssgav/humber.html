@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <!-- <link rel="stylesheet" href="style.css"> -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="style5.css">
+   </head>
+   <style>
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: 0 1px 4px rgba(176, 158, 146, 0.15);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: #0e2431;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  box-shadow: inset 0 0 2000px rgba(154, 47, 47, 0.5);
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: #0e2431;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+
+   </style>
+   <body>
+    <div id="container">
+            <nav>
+              <div class="navbar">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                      <span class="line line1"></span>
+                      <span class="line line2"></span>
+                      <span class="line line3"></span>
+                    </div>  
+                  <div class="logo">
+                    <h1>Navbar</h1>
+                  </div>
+                  <div class="menu-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">blogs</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">contact</a></li>
+                  </div>
+                </div>
+              </div>
+            </nav>
+      <div id="banner">
+        <img src="images/bannermar.jpg" id="banner_img"alt="">
+    </div>
+    <div id="third">
+        <div id="third22">
+            <center><h3 id="third=1">WELCOME TO INDORE MARRIOTT HOTEL</h3></center>
+        <center><h1 id="third2">Embrace comfort at our 5-star luxury <br>hotel</h1></center>
+        <center><p id="third3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aspernatur reiciendis rerum! Harum quisquam rerum ipsa rem est consectetur, omnis excepturi! Fugit iste molestias culpa soluta quaerat. Eligendi placeat voluptate sapiente saepe perspiciatis repellat, obcaecati sint eos cum veritatis modi?</p></center>
+        </div>
+    </div>
+    <div id="sbox">
+        <h3 id="heading1">Offers and packages</h3>
+        <div id="sbox1">
+            <img src="images/first.jpeg" id="boximg2" alt="">
+            <center><span id="fullname">Name</span></center>
+        </div>
+        <div id="sbox2">
+            <img src="images/second.webp" id="boximg2" alt="">
+            <center><span id="fullname">Name</span></center>
+        </div>
+        <div id="sbox3">
+            <img src="images/third.webp" id="boximg2" alt="">
+            <center><span id="fullname">Name</span></center>
+        </div>
+    </div>    
+    <div id="box">
+        <center><h3 id="heading2">Offers and packages</h3></center>
+        <div id="box1">
+            <img src="images/1.avif" id="boximg" alt="">
+            <center><span id="fullname">Name</span></center>
+            <center><span id="boxcon">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex reiciendis eligendi debitis reprehenderit dicta, repellat sint voluptate, deleniti incidunt totam obcaecati laboriosam, minus voluptatum doloremque saepe tenetur numquam quasi animi!</span></center>
+        </div>
+        <div id="box2">
+            <img src="images/2.avif" id="boximg" alt="">
+            <center><span id="fullname">Name</span></center>
+            <center><span id="boxcon">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit nulla laborum nisi quis illo hic minus vitae incidunt doloribus eveniet, et distinctio soluta veniam aliquid. Harum sunt vero incidunt aperiam.</span></center>
+        </div>
+        <div id="box3">
+            <img src="images/3.webp" id="boximg" alt="">
+            <center><span id="fullname">Name</span></center>
+            <center><span id="boxcon">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, distinctio ullam. Optio molestiae magni reprehenderit iste officiis nobis dolorum, perspiciatis eos quo. Dolorum magnam nihil sapiente, ea facere ad perferendis.</span></center>
+        </div>
+    </div>
+    <div id="gallery">
+        <center><h1>Photos&Videos</h1></center>
+            <br>
+        <img src="images/1.avif" id="gallery_img" alt="">
+        <img src="images/2.avif" id="gallery_img" alt="">
+        <img src="images/3.webp" id="gallery_img" alt="">
+        <img src="images/2.avif" id="gallery_img" alt="">
+    </div>
+    <div id="about"> 
+        <center><h1 id="aboutheading">About Us</h1></center>
+        <br>
+        <div id="about1">
+            Lorem ipsum dolor sit amet consectetur totam assumenda incidunt. Fugit debitis qui fugiat tempore et libero eligendi vero nam architecto provident. Qui assumenda provident dicta, error voluptates accusantium modi impedit possimus voluptatum consectetur. Commodi, optio? Totam ea porro velit dignissimos veritatis labore et expedita vero! Possimus totam maiores quaerat ipsam odit doloremque illum ipsum necessitatibus ex officiis rerum praesentium est, aspernatur, nesciunt iure quibusdam alias harum aliquam dolores corrupti in natus unde, explicabo facilis. Nisi veritatis voluptate officiis a dolores corrupti impedit eveniet itaque repellendus quaerat! Iure, nemo iusto? <br>
+        <br>
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem sint ex officiis, ut doloribus facere quasi, voluptates in reprehenderit sunt architecto itaque voluptate voluptatibus dicta illo? Est consequuntur quisquam pariatur numquam iusto ab autem fugit? Recusandae hic veritatis quasi adipisci quaerat id, consectetur cum libero dolorum incidunt? Ratione exercitationem, mollitia deserunt laboriosam nam necessitatibus, velit provident, illum quisquam molestias inventore.
+
+        </div>
+        <div id="about2">
+            <img src="images/about.jpg" id="aboutbanner" alt="">
+        </div>
+    </div>
+    <div id="conheading">
+        <center><h1>Contact Us</h1></center>
+    </div>
+    <div id="contact">
+        <br>
+        <div id="contact1">
+            <h3>Social Networking</h3>
+            <ul type="circle">
+                <li>YouTube</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Google+</li>
+                <li>WhatsApp</li>
+                <li>Facebook</li>
+                <li>LinkedIn</li>
+            </ul>
+        </div>
+        <div id="contact2">
+            <h3>QuickLinks</h3>
+            <ul type="circle">
+                <li>Home</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Product</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+    </div> 
+    <div id="con2">
+        <div id="cont">
+            <h3>Address</h3>
+            <span>
+                H-2, SCHEME NO 54, <br> MEGHDOOT GARDEN, <br>VIJAY NAGAR,
+                INDORE, MADHYA PRADESH, <br>INDIA, 452010
+            </span>
+
+            <h3>Mail Us At</h3>
+            <span>
+                uday@gmail.com <br>
+                mourya@gmail.com
+            </span>
+
+            <h3>Connect With Us</h3>
+                <span>
+                    +0731-737373 <br>
+                </span>
+        </div>
+    </div> 
+    <div id="footer">
+        <div id="footer1">
+            <center>
+                &copy;  Khatushyam Travels,All Rights Reserved | 2023 Designed by Uday Mourya &trade;
+              </center>
+        </div>
+    </div>
+    </div>
+   </body>
+</html>
