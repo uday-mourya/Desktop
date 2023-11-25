@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Swapping</title>
+</head>
+
+<body>
+    <h1 align="center">Click the Image to Swap</h1>
+
+    <div style="display: flex; flex-direction: column; align-items: center; ">
+        <img id="topImage" src="logo.jpg" height="200" width="200" onclick="swapImage()">
+        <div style="display: flex; justify-content: space-around; margin-top: 20px; border: 3px solid;">
+            <img src="image1.jpeg" height="100" width="100" onclick="changeTopImage('image1.jpeg')">
+            <img src="image2.jpeg" height="100" width="100" onclick="changeTopImage('image2.jpeg')">
+            <img src="image4.jpg" height="100" width="100" onclick="changeTopImage('image4.jpg')">
+        </div>
+    </div>
+
+    <script>
+        function changeTopImage(imageSrc) {
+            const topImageElement = document.getElementById('topImage');
+            topImageElement.src = imageSrc;
+        }
+
+        let currentImage = 1;
+
+        function swapImage() {
+            const topImageElement = document.getElementById('topImage');
+
+            // Update the current image number and swap the image source
+
+
+            
+            // if (currentImage === 1) {
+            //     topImageElement.src = 'image2.jpeg';
+            //     currentImage = 2;
+            // } else if (currentImage == 2) {
+            //     topImageElement.src = 'image4.jpg';
+            //     currentImage = 3;
+            // } else {
+            //     topImageElement.src = 'image1.jpeg';
+            //     currentImage = 1;
+            // }
+        }
+    </script>
+</body>
+
+</html>

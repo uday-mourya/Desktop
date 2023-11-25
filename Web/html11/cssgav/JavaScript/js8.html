@@ -6,7 +6,7 @@
 <body>
     <h1>Click the Image to Swap</h1>
     
-    <img id="image" src="img-1.png" height="200" width="200" onclick="swapImage()">
+    <img id="image" src="logo.jpg" height="200" width="200" onclick="swapImage()">
     
     <script>
         let currentImage = 1;
@@ -16,14 +16,14 @@
             
             // Update the current image number and swap the image source
             if (currentImage === 1) {
-                imageElement.src = 'img-1.png';
+                imageElement.src = 'image2.jpeg';
                 currentImage = 2;
             } else if (currentImage == 2){
-                imageElement.src = 'img-8.jpg';
+                imageElement.src = 'image1.jpeg';
                 currentImage = 3;
             }
             else {
-                imageElement.src = 'img-7.webp';
+                imageElement.src = 'logo.jpg';
                 currentImage = 1;
             }
         }

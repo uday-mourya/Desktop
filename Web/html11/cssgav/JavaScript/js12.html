@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center" border="2" cellspacing="0" cellpadding="14">
+        <tr>
+            <th>SNo</th>
+            <th>Category</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Amount</th>
+        </tr>
+        
+        <tr>
+            <td align="center">1</td>
+            <td align="center">Soap</td>
+            <td><input type="number" id="qly" oninput="soap()"></td>
+            <td><input type="number" id="price" oninput="soap()"></td>
+            <td><input type="text" id="res" readonly></td>
+        </tr>
+        <tr>
+            <td align="center">2</td>
+            <td align="center">Boxes</td>
+            <td><input type="number" id="qly1" oninput="soap1()"></td>
+            <td><input type="number" id="price1" oninput="soap1()"></td>
+            <td><input type="text" id="res1" readonly></td>
+        </tr>
+        <tr>
+            <td align="center">3</td>
+            <td align="center">Cream</td>
+            <td><input type="number" id="qly2" oninput="soap2()"></td>
+            <td><input type="number" id="price2" oninput="soap2()"></td>
+            <td><input type="text" id="res2" readonly></td>
+        </tr>
+        <tr>
+            <td align="center">GST</td>
+            <td><input type="number" placeholder="enter gst" id="gst" oninput="total()"></td>
+            <td align="center">Total</td>
+            <td colspan="2" align="center"><input type="text" id="total" readonly></td>
+        </tr>
+    </table>
+
+    <script>
+        function soap(){
+            var qly = document.getElementById("qly").value;
+            var price = document.getElementById("price").value;
+            var res = document.getElementById("res");
+
+            if (qly.trim() === "" || price.trim() === "") {
+                res.value = "";
+            } else {
+                var r = qly * price;
+                res.value = r;
+            }
+        }
+
+        function soap1(){
+            var qly1 = document.getElementById("qly1").value;
+            var price1 = document.getElementById("price1").value;
+            var res1 = document.getElementById("res1");
+
+            if (qly1.trim() === "" || price1.trim() === "") {
+                res1.value = "";
+            } else {
+                var r1 = qly1 * price1;
+                res1.value = r1;
+            }
+        }
+
+        function soap2(){
+            var qly2 = document.getElementById("qly2").value;
+            var price2 = document.getElementById("price2").value;
+            var res2 = document.getElementById("res2");
+
+            if (qly2.trim() === "" || price2.trim() === "") {
+                res2.value = "";
+            } else {
+                var r2 = qly2 * price2;
+                res2.value = r2;
+            }
+        }
+
+        function total(){
+            var res = parseFloat(document.getElementById("res").value) || 0;
+            var res1 = parseFloat(document.getElementById("res1").value) || 0;
+            var res2 = parseFloat(document.getElementById("res2").value) || 0;
+            var gst = parseFloat(document.getElementById("gst").value) || 0;
+            var totalElement = document.getElementById("total");
+
+            var totalAmount = res + res1 + res2;
+            var totalGST = (totalAmount * gst) / 100;
+            var t = totalAmount + totalGST;
+            totalElement.value = t.toFixed(2); // Assuming you want two decimal places
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var isRunning = false;
+var seconds = 0;
+var minutes = 0;
+var hours = 0;
+var timer;
+
+function startStop() {
+    if (isRunning) {
+        clearInterval(timer);
+        document.getElementById("startStop").textContent = "Start";
+    } else {
+        timer = setInterval(run, 1000);
+        document.getElementById("startStop").textContent = "Stop";
+    }
+    isRunning = !isRunning;
+}
+
+function run() {
+    seconds++;
+    if (seconds == 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes == 60) {
+            minutes = 0;
+            hours++;
+        }
+    }
+    updateDisplay();
+}
+
+function reset() {
+    clearInterval(timer);
+    isRunning = false;
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+    updateDisplay();
+    document.getElementById("startStop").textContent = "Start";
+}
+
+function updateDisplay() {
+    var time = pad(hours) + ":" + pad(minutes) + ":" + pad(seconds);
+    document.getElementById("display").textContent = time;
+}
+
+function pad(number) {
+    return (number < 10 ? "0" : "") + number;
+}
+
+</script>
+<style>
+   .stopwatch {
+    text-align: center;
+}
+
+#display {
+    font-size: 24px;
+    margin: 10px 0;
+}
+#box{
+    border: 2px solid black;
+    background-color: rgb(255, 236, 127);
+    height: 300px;
+    width: 250px;
+    justify-content: center;
+}
+
+button {
+    font-size: 16px;
+    padding: 5px 15px;
+    margin: 5px;
+}
+#startStop{
+    background-color: rgb(209, 98, 0);
+
+}
+
+</style>
+<body>   
+    <div>
+        <div class="stopwatch">
+            <div id="display">00:00:00</div>
+            <button id="startStop" onclick="startStop()">Start</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+</body>
+</html>

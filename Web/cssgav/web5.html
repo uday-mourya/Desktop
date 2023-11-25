@@ -6,129 +6,152 @@
     <title>Document</title>
     <link rel="stylesheet" href="style5.css">
     <link rel="icon" href="images/logo2.jpg">
+    <style>
+      body {
+          margin: 0;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
 
-    <script>
-        $(document).ready(function() {
-      "use strict";
-      $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
-      $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
-      $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\">&nbsp;</a>");
-      $(".menu > ul > li").hover(function(e) {
-        if ($(window).width() > 943) {
-          $(this).children("ul").stop(true, false).fadeToggle(150);
-          e.preventDefault();
-        }
-      });
-      $(".menu > ul > li").click(function() {
-        if ($(window).width() <= 943) {
-          $(this).children("ul").fadeToggle(150);
-        }
-      });
-      $(".menu-mobile").click(function(e) {
-        $(".menu > ul").toggleClass('show-on-mobile');
-        e.preventDefault();
-      });
-    });
-    $(window).resize(function() {
-      $(".menu > ul > li").children("ul").hide();
-      $(".menu > ul").removeClass('show-on-mobile');
-    });
-    </script>  
+      .navbar {
+          background-color: #333;
+          color: #fff;
+          padding: 10px 20px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+
+      .logo {
+          font-size: 24px;
+          font-weight: bold;
+      }
+
+      .hamburger-menu {
+          display: none;
+          cursor: pointer;
+      }
+
+      .hamburger-menu>div {
+          width: 30px;
+          height: 3px;
+          background-color: #fff;
+          margin: 6px 0;
+          transition: 0.4s;
+      }
+
+      .menu {
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      .menu li {
+          margin-right: 20px;
+      }
+
+      .menu li a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 18px;
+          transition: color 0.3s ease;
+      }
+
+      .menu li a:hover {
+          color: #f8f8f8;
+      }
+
+      .offcanvas {
+          position: fixed;
+          top: 0;
+          right: -250px;
+          width: 250px;
+          height: 100%;
+          background-color: #333;
+          transition: 0.3s ease-in-out;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          overflow-y: auto;
+      }
+
+      .offcanvas-menu {
+          list-style: none;
+          padding: 0;
+          margin: 20px 0;
+      }
+
+      .offcanvas-menu li {
+          padding: 15px;
+          text-align: center;
+      }
+
+      .offcanvas-menu a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 18px;
+          transition: color 0.3s ease;
+      }
+
+      .offcanvas-menu a:hover {
+          color: #f8f8f8;
+      }
+
+      .close-icon {
+          cursor: pointer;
+          text-align: right;
+          padding: 15px;
+          font-size: 24px;
+          color: #fff;
+      }
+
+      @media (max-width: 768px) {
+          .hamburger-menu {
+              display: block;
+              top: 15px;
+          }
+
+          .menu {
+              display: none;
+          }
+
+          .offcanvas.active {
+              right: 0;
+          }
+      }
+  </style>
 </head>
 <body>
-    <div id="container">
-        <!-- <div id="logoline">
-            <img id="logo" src="images/marriot.webp" alt="">
-            <ul>
-                <li><a href="web5.html">Home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="gallery5.html">Gallery</a></li>
-                <li><a href="about5.html">AboutUS</a></li>
-                <li><a href="contact5.html">ContactUs</a></li>
-                <li><a href="login5.html"><button id="button">Login</button></a></li>
-            </ul>
-        </div> -->
-        <div class="menu-container">
-            <div class="menu">
-              <a href="#" class="logo">Logo</a>
-              <ul class="clearfix">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a>
-                  <ul>
-                    <li><a href="#">School</a>
-                      <ul>
-                        <li><a href="#">Lidership</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Locations</a></li>
-                        <li><a href="#">Careers</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Study</a>
-                      <ul>
-                        <li><a href="#">Undergraduate</a></li>
-                        <li><a href="#">Masters</a></li>
-                        <li><a href="#">International</a></li>
-                        <li><a href="#">Online</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Research</a>
-                      <ul>
-                        <li><a href="#">Undergraduate research</a></li>
-                        <li><a href="#">Masters research</a></li>
-                        <li><a href="#">Funding</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Something</a>
-                      <ul>
-                        <li><img src="https://placeimg.com/300/200/nature"></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="#">News</a>
-                  <ul>
-                    <li><a href="#">Today</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Sport</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Contact</a>
-                  <ul>
-                    <li><a href="#">School</a>
-                      <ul>
-                        <li><a href="#">Lidership</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Locations</a></li>
-                        <li><a href="#">Careers</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Study</a>
-                      <ul>
-                        <li><a href="#">Undergraduate</a></li>
-                        <li><a href="#">Masters</a></li>
-                        <li><a href="#">International</a></li>
-                        <li><a href="#">Online</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Study</a>
-                      <ul>
-                        <li><a href="#">Undergraduate</a></li>
-                        <li><a href="#">Masters</a></li>
-                        <li><a href="#">International</a></li>
-                        <li><a href="#">Online</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Empty sub</a>
-                      <ul>
-                        <li><img src="https://placeimg.com/300/200/people"></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- humberger -->
+  <nav class="navbar">
+    <div class="container">
+        <div class="logo">Your Logo</div>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="offcanvas" id="offcanvas">
+    <div class="close-icon" onclick="closeNav()">✕</div>
+    <ul class="offcanvas-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
         <div id="banner">
             <img src="images/bannermar.jpg" id="banner_img"alt="">
         </div>
@@ -250,6 +273,17 @@
             </div>
         </div>
     </div> 
-    
+    <script>
+      const hamburgerIcon = document.getElementById('hamburger-menu');
+      const offcanvas = document.getElementById('offcanvas');
+  
+      hamburgerIcon.addEventListener('click', function () {
+          offcanvas.classList.toggle('active');
+      });
+  
+      function closeNav() {
+          offcanvas.classList.remove('active');
+      }
+  </script>
 </body>
 </html>

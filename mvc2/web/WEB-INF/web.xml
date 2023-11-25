@@ -17,10 +17,6 @@
         <servlet-class>com.employee.controller.Update</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>userlogincontroller</servlet-name>
-        <servlet-class>com.employee.controller.userlogincontroller</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>userregistration</servlet-name>
         <servlet-class>com.employee.controller.userregistration</servlet-class>
     </servlet>
@@ -39,10 +35,6 @@
     <servlet-mapping>
         <servlet-name>Update</servlet-name>
         <url-pattern>/Update</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>userlogincontroller</servlet-name>
-        <url-pattern>/userlogincontroller</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>userregistration</servlet-name>
