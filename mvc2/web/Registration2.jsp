@@ -306,12 +306,6 @@ function Movalidate()
         <span id="fdisplay"></span>
         <label>Enter salary</label>
       </div>
-
-<!--    <div class="input-field">
-        <input   id="mobile"  type="text"  name="mob">
-        <span id="mdisplay" style="color:red; font-size: 14px;">*</span>
-        <label> Mobile Number</label>
-    </div>-->
       <button type="submit" name="submit" value="submit">Register</button>
       <div class="register">
         <p>You already have an account? <a href="Login2.jsp">Login</a></p>

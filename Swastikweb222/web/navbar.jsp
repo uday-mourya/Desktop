@@ -361,57 +361,6 @@
     </aside>
     <!-- End Sidebar-->
     
-    
-    <main id="main" class="main">
-      <div class="pagetitle">
-        <h1>Dashboard</h1>
-        <nav>
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active">Dashboard</li>
-          </ol>
-        </nav>
-      </div>
-      <!-- End Page Title -->
-
-      <!-- sgdg -->
-      <section class="section dashboard my-5 ml-3">
-        <div class="row">
-          <div class="col-12">
-            <div class="d-flex justify-content-between">
-
-                <div class="box box-custom col-4 col-md-2 mx-3 ml-3">
-                    <i class="fas fa-university fa-3x mt-3"></i>
-                    <p>Banking Icon</p>
-                </div>
-                <div class="box box-custom col-4 col-md-2 mx-3 ml-3">
-                    <i class="fa fa-wallet fa-3x mt-3"></i>
-                    <p>Digital Wallet</p>
-                </div>
-                <div class="box box-custom col-4 col-md-2 mx-3 ml-3">
-                    <i class="fas fa-laptop-house fa-3x mt-3"></i>
-                    <p>DTH Recharge</p>
-                </div>
-                <div class="box box-custom col-4 col-md-2 mx-3 ml-3">
-                    <i class="fas fa-tablet-alt fa-3x mt-3"></i>
-                    <p>Mobile Recharge</p>
-                </div>
-                <div class="box box-custom col-4 col-md-2 mx-3 ml-3">
-                    <i class="fas fa-sun fa-3x mt-3"></i>
-                    <p>Elecricity Payment</p>
-                </div>
-                <div class="box box-custom col-4 col-md-2 mx-3 ml-3">
-                    <i class="fas fa-wallet fa-3x mt-3"></i>
-                    <p class="mx-4">Wallet Icon</p>
-                </div>
-              
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- shhshend -->
-    </main>
-     <%@include file="footer.jsp" %>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -19,7 +19,7 @@ public class collections {
         this.price = price;
     }
 
-    // Getters and setters (if needed)
+    
     public String getName() {
         return name;
     }
@@ -41,10 +41,10 @@ public class collections {
         return "Collections{" + "name=" + name + ", price=" + price + '}';
     }
     public static void main(String[] args) {
-        // TODO code application logic here
+        
          ArrayList<collections> productList = new ArrayList<>();
 
-        // Create a Scanner for user input
+        
         Scanner scanner = new Scanner(System.in);
         System.out.println("How many products you want to Enter");
         int n=scanner.nextInt();
@@ -57,17 +57,17 @@ public class collections {
              
             System.out.print("Price: ");
             double productPrice = scanner.nextDouble();
-            scanner.nextLine(); // Consume the newline character
+            scanner.nextLine(); 
 
             collections product = new collections(productName, productPrice);
             productList.add(product);
         }
         System.out.println("\n");
 
-        // Close the scanner
+        
         scanner.close();
 
-        // Display the products
+        
         System.out.println("List of Products:");
         for (collections product : productList) {
             System.out.println(product);

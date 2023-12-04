@@ -70,7 +70,7 @@ public class  Collection {
         int n=scanner.nextInt();
      
         for (int i = 1; i <= n; i++) {
-            System.out.println("Please Enter Prodyyct Detials " + i + ":");
+            System.out.println("Please Enter Product Details " + i + ":");
             System.out.print("Enter Product Name: ");
             String productName = scanner.nextLine();
             scanner.nextLine();
