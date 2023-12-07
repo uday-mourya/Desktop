@@ -4,7 +4,6 @@
  */
 package com.project.service;
 
-
 import java.util.Properties;
 import java.util.Scanner;
 import jakarta.mail.Message;
@@ -43,25 +42,39 @@ public class SendMail {
         this.USER_NAME = USER_NAME;
     }
     private String msgText = "";
-    private String USER_NAME = "sohanmaali144@gmail.com";   // Reasever Mail (User Mail)
-    private final String PASSSWORD = "dckl aaps fzca lwez";  //Password of the Goole(gmail) account
-    private final String SENDER = "sohanmaali4@gmail.com";  //From addresss
+    private String USER_NAME = "umourya0007@gmail.com";   // Reasever Mail (User Mail)
+    private final String PASSSWORD = "twjv iezi qttk egea";  //Password of the Goole(gmail) account
+    private final String SENDER = "udaymourya08@gmail.com";  //From addresss
 
     public static void main(String[] args) {
-        SendMail  email = new SendMail ();
+        SendMail email = new SendMail();
         //Sending test email
         int otp = otpGenerat();
         Scanner sc = new Scanner(System.in);
-        email.createAndSendEmail("Account varification in Swastik...", " Dear swastik user. ,\n the one time OTP to reset your password at (swastik Account) is " + otp + ".\n \n This OTP will expire in 5 minutes. ");
+//        email.createAndSendEmail("Account verification in RoyalPalm...", " Dear Royal Palm user. ,\n the one time OTP to reset your password at (Royal Palm) is " + otp + ".\n \n This OTP will expire in 5 minutes. ");
+
+       String emailBody = "Subject: Account Verification - Royal Palm\n\n"
+                  + "Dear Royal Palm User,\n\n"
+                  + "We hope this message finds you well. In order to enhance the security of your account, a one-time OTP (One-Time Password) has been generated for resetting your password. Please use the following OTP:\n\n"
+                  + "OTP: [Your OTP Here]\n\n"
+                  + "This OTP will remain valid for the next 5 minutes. If you did not request a password reset or are unsure about this email, please contact our support team immediately.\n\n"
+                  + "Thank you for choosing Royal Palm.\n\n"
+                  + "Best regards,\n"
+                  + "[Your Company/Organization Name]\n"
+                  + "[Your Contact Information]\n\n"
+                  + "---";
+
+email.createAndSendEmail(emailBody);
+
         int fillOtp = sc.nextInt();
         if (otp == fillOtp) {
-            System.out.println("Registration Seccsess");
+            System.out.println("Registration Success");
         } else {
             System.out.println("Registration Fail");
         }
     }
 
-    public void createAndSendEmail(String msgSubject, String msgText) {
+    public void createAndSendEmail(String msgSubject) {
         this.msgSubject = msgSubject;
         this.msgText = msgText;
         sendEmailMessage();
@@ -102,7 +115,7 @@ public class SendMail {
 
     public static int otpGenerat() {
         int random = (int) (Math.random() * 999999);
-        System.out.println("rendom num is: " + random);
+        System.out.println("Random Number is: " + random);
         return random;
     }
 }
