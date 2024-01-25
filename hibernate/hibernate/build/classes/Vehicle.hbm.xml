@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="Vehicle" table="Vehicle">
+        <id name="vehicleId" type="int">
+            <column name="vehicle_id" />
+            <generator class="identity" />
+        </id>
+        <property name="company" column="company" not-null="true" />
+        <property name="model" column="model" not-null="true" />
+        <property name="year" column="year" not-null="true" />
+        <property name="color" column="color" not-null="true" />
+        <property name="registrationNumber" column="registration_number" not-null="true" />
+        <property name="ownerName" column="owner_name" not-null="true" />
+    </class>
+</hibernate-mapping>
+
+

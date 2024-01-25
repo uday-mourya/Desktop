@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="Faculty" table="Faculty">
+        <id name="facultyId" type="int">
+            <column name="faculty_id" />
+            <generator class="identity" />
+        </id>
+        <property name="firstName" column="first_name" not-null="true" />
+        <property name="lastName" column="last_name" not-null="true" />
+        <property name="department" column="department" not-null="true" />
+        <property name="position" column="position" not-null="true" />
+        <property name="joiningDate" column="joining_date" not-null="true" />
+        <property name="salary" column="salary" not-null="true" />
+    </class>
+</hibernate-mapping>
+
+

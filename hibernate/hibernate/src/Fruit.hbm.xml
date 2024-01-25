@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="Fruit" table="Fruit">
+        <id name="fruitId" type="int">
+            <column name="fruit_id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" column="name" not-null="true" />
+        <property name="color" column="color" not-null="true" />
+        <property name="taste" column="taste" not-null="true" />
+        <property name="origin" column="origin" not-null="true" />
+        <property name="price" column="price" not-null="true" />
+        <property name="quantityInStock" column="quantity_in_stock" not-null="true" />
+    </class>
+</hibernate-mapping>
+

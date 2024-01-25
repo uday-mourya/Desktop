@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    
+    
+    <class name= "com.model.Student" table= "Student2">
+        <id name="Roll" column = "Roll">
+            <generator class="assigned" />
+        </id>
+        <property name="Name" column="name" />
+        <property name="fee" column="fee" />
+        <property name="marks" column="marks"/>
+    </class>
+    
+    <class name="com.model.Mobile" table="Mobile">
+           <id name="mobileId" type="int">
+            <column name="mobile_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="brand" column="brand" not-null="true" />
+        <property name="model" column="model" not-null="true" />
+        <property name="storageCapacity" column="storage_capacity" not-null="true" />
+        <property name="color" column="color" not-null="true" />
+        <property name="price" column="price" not-null="true" />
+        <property name="releaseDate" column="release_date" not-null="true" />
+    </class>
+    
+    <class name="com.model.Person" table="Person">
+      
+        <id name="id" type="int">
+            <column name="id"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="Name" column="Name" not-null="true" />     
+        <property name="Dob" column="Dob" not-null="true" />     
+        <property name="email" column="email" not-null="true" />     
+        <property name="number" column="number" not-null="true" />     
+        <property name="address" column="address" not-null="true" />     
+            
+    </class>
+    
+    <class name="com.model.Account" table="Account">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned"/>
+        </id>
+        <property name="number" column="number" not-null="true"/>
+        <property name="type" column="type" not-null="true"/>
+        <property name="balance" column="balance" not-null="true"/>
+        <property name="name" column="name" not-null="true"/>
+        <property name="status" column="status" not-null="true"/>
+        <property name="bank" column="bank" not-null="true"/>
+        <property name="branch" column="branch" not-null="true"/>
+
+    </class>
+    
+    <class name="com.model.Animal" table="animal">
+        <id name="animalid" column="animal_id" type="int">
+            <generator class="assigned"/>
+        </id>
+        <property name="species" />
+        <property name="weight" />
+        <property name="color" />
+        <property name="age" />
+        <property name="name" />
+    </class>
+    
+    <class name="com.model.Fruit" table="Fruit">
+        <id name="Fruitid"  column="fruit_id" type="int">
+            <generator class="assigned"/>
+        </id>
+         <property name="taste" />
+        <property name="name" />
+        <property name="origin" />
+        <property name="color" />
+        <property name="price" />
+        <property name="quantity" column="quantity_in_stock"/>
+    </class>
+    
+</hibernate-mapping>

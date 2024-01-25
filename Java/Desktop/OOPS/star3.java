@@ -24,7 +24,7 @@ class Test
       Addition ob=new Addition();
       ob.setData(6,7);
       int res=ob.add();
-      System.out.println("Substraction = "+res);
+      System.out.println("Multiplication = "+res);
     }
 }
    

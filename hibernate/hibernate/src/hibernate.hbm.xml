@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="Pojohibernate" table="student">
+        
+        <id name="rno" column="id">
+            <generator class="assigned"/> 
+        </id>
+        
+        <property name="name"/> 
+        <property name="fee"/> 
+    </class>
+    <class name="com.project.pojo.Student1" table="student1">
+        
+        <id name="StudentId" column="student_id">
+            <generator class="assigned"/> 
+        </id>
+        
+        <property name="firstName" column="first_name"/> 
+        <property name="lastName" column="last_name"/> 
+        <property name="age"/> 
+        <property name="gender"/> 
+        <property name="grade"/> 
+    </class>
+    
+    
+    <class name="Animal" table="Animal">
+        
+        <id name="animalId" column="animal_id">
+            <generator class="assigned"/> 
+        </id>
+         <property name="species" column="species"/> 
+        <property name="name" column="name"/> 
+        <property name="age"/> 
+        <property name="color"/> 
+        <property name="weight"/> 
+    </class>
+    
+    <class name="Person" table="Person">
+        <id name="personId" type="int">
+            <column name="person_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstName" column="first_name" not-null="true" />
+        <property name="lastName" column="last_name" not-null="true" />
+        <property name="dateOfBirth" column="date_of_birth" not-null="true" />
+        <property name="email" column="email" not-null="true" />
+        <property name="phoneNumber" column="phone_number" not-null="true" />
+        <property name="address" column="address" not-null="true" />
+    </class>
+    
+    
+    <class name="Employee" table="Employee">
+        <id name="empId" type="int">
+            <column name="empid" />
+            <generator class="assigned" />
+        </id>
+        <property name="empName" column="emp_name" not-null="true" />
+        <property name="empAge" column="emp_age" not-null="true" />
+        <property name="empSalary" column="emp_sal" not-null="true" />
+        <property name="empDesignation" column="emp_designation" not-null="true" />
+        <property name="empAddress" column="emp_address" not-null="true" />
+        <property name="empPhoneNumber" column="emp_phone_no" not-null="true" />
+    </class>
+    
+    
+    <class name="Product" table="Product">
+        <id name="productId" type="int">
+            <column name="product_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="productName" column="product_name" not-null="true" />
+        <property name="description" column="description" not-null="true" />
+        <property name="price" column="price" not-null="true" />
+        <property name="stockQuantity" column="stock_quantity" not-null="true" />
+        <property name="manufacturer" column="manufacturer" not-null="true" />
+        <property name="category" column="category" not-null="true" />
+    </class>
+    
+    
+    <class name="Vehicle" table="Vehicle">
+        <id name="vehicleId" type="int">
+            <column name="vehicle_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="company" column="company" not-null="true" />
+        <property name="model" column="model" not-null="true" />
+        <property name="year" column="year" not-null="true" />
+        <property name="color" column="color" not-null="true" />
+        <property name="registrationNumber" column="registration_number" not-null="true" />
+        <property name="ownerName" column="owner_name" not-null="true" />
+    </class>
+    <class name="Account" table="Account">
+        <id name="accountId" type="int">
+            <column name="account_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="accountNumber" column="account_number" not-null="true" />
+        <property name="accountType" column="account_type" not-null="true" />
+        <property name="balance" column="balance" not-null="true" />
+        <property name="holderName" column="holder_name" not-null="true" />
+        <property name="openDate" column="open_date" not-null="true" />
+        <property name="status" column="status" not-null="true" />
+    </class>
+    <class name="Faculty" table="Faculty">
+        <id name="facultyId" type="int">
+            <column name="faculty_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstName" column="first_name" not-null="true" />
+        <property name="lastName" column="last_name" not-null="true" />
+        <property name="department" column="department" not-null="true" />
+        <property name="position" column="position" not-null="true" />
+        <property name="joiningDate" column="joining_date" not-null="true" />
+        <property name="salary" column="salary" not-null="true" />
+    </class>
+    
+    
+    <class name="Mobile" table="Mobile">
+        <id name="mobileId" type="int">
+            <column name="mobile_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="brand" column="brand" not-null="true" />
+        <property name="model" column="model" not-null="true" />
+        <property name="storageCapacity" column="storage_capacity" not-null="true" />
+        <property name="color" column="color" not-null="true" />
+        <property name="price" column="price" not-null="true" />
+        
+    </class>
+    
+    <class name="Fruit" table="Fruit">
+        <id name="fruitId" type="int">
+            <column name="fruit_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" column="name" not-null="true" />
+        <property name="color" column="color" not-null="true" />
+        <property name="taste" column="taste" not-null="true" />
+        <property name="origin" column="origin" not-null="true" />
+        <property name="price" column="price" not-null="true" />
+        <property name="quantityInStock" column="quantity_in_stock" not-null="true" />
+    </class>
+
+</hibernate-mapping>

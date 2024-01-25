@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="government_letter_styles.css">
+    <title>Government Letter</title>
+    <style>
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.title h1 {
+    margin: 5px 0 0;
+}
+
+.title p {
+    margin: 5px 0;
+}
+
+section {
+    margin: 20px;
+}
+
+.date {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.greeting {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subject {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.letter-body p {
+    margin-bottom: 15px;
+}
+
+.sender {
+    font-style: italic;
+    margin-top: 30px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    header {
+        background-color: #fff;
+        color: #000;
+    }
+
+    button {
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #218838;
+    }
+
+    button:active {
+        background-color: #1e7e34;
+    }
+
+    button:focus {
+        outline: none;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="government_logo.png" alt="Government Logo">
+        </div>
+        <div class="title">
+            <h1>Government of [Your Country]</h1>
+            <p>Official Letterhead</p>
+        </div>
+    </header>
+
+    <section id="content">
+        <p class="date">Date: January 17, 2024</p>
+
+        <p class="greeting">Dear [Recipient's Name],</p>
+
+        <p class="subject">Subject: [Subject of the Letter]</p>
+
+        <div class="letter-body">
+            <p>
+                [Body of the letter goes here. This is a placeholder for the content of your letter.
+                You can add multiple paragraphs, lists, and any other elements as needed.]
+            </p>
+
+            <p>Thank you for your attention to this matter.</p>
+
+            <p>Yours sincerely,</p>
+
+            <p class="sender">
+                [Your Name]<br>
+                [Your Designation]<br>
+                [Department, Government of [Your Country]]
+            </p>
+        </div>
+    </section>
+
+    <button id="printButton" onclick="printPage()">Print Letter</button>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+    </script>
+
+</body>
+</html>

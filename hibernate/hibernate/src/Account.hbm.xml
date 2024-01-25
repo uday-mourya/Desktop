@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+    <class name="Account" table="Account">
+        <id name="accountId" type="int">
+            <column name="account_id" />
+            <generator class="identity" />
+        </id>
+        <property name="accountNumber" column="account_number" not-null="true" />
+        <property name="accountType" column="account_type" not-null="true" />
+        <property name="balance" column="balance" not-null="true" />
+        <property name="holderName" column="holder_name" not-null="true" />
+        <property name="openDate" column="open_date" not-null="true" />
+        <property name="status" column="status" not-null="true" />
+    </class>
+</hibernate-mapping>
+

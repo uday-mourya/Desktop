@@ -19,6 +19,8 @@ class Test
    System.out.println("Welcome in main Method");
    Test ob =new Test();
    ob.vote();
+
+  //  Test.vote();
    
    System.out.println("Main Method End");
   }

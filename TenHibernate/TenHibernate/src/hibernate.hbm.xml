@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+   <class name="com.pojo.MobilePOJO" table="mobile_record">
+        <id name="mobileId" type="int">
+            <column name="mobileId" />
+            <generator class="identity" />
+        </id>
+
+        <property name="brand" type="string">
+            <column name="brand" />
+        </property>
+
+        <property name="model" type="string">
+            <column name="model" />
+        </property>
+
+        <property name="storageCapacity" type="int">
+            <column name="storage_capacity" />
+        </property>
+
+        <property name="ramSize" type="int">
+            <column name="ram_size" />
+        </property>
+
+        <property name="price" type="float">
+            <column name="price" />
+        </property>
+
+        <property name="color" type="string">
+            <column name="color" />
+        </property>
+    </class>
+    
+    <class name="com.pojo.FruitPOJO" table="fruit">
+
+        <id name="fruitId" type="int">
+            <column name="fruit_id" />
+            <generator class="identity" />
+        </id>
+
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+
+        <property name="color" type="string">
+            <column name="color" />
+        </property>
+
+        <property name="calories" type="int">
+            <column name="calories" />
+        </property>
+
+        <property name="price" type="float">
+            <column name="price" />
+        </property>
+
+        <property name="season" type="string">
+            <column name="season" />
+        </property>
+
+        <property name="description" type="text">
+            <column name="description" />
+        </property>
+
+    </class>
+
+
+    <class name="com.pojo.FacultyPOJO" table="faculty">
+
+        <id name="facultyId" type="int">
+            <column name="faculty_id" />
+            <generator class="identity" />
+        </id>
+
+        <property name="firstName" type="string">
+            <column name="first_name" length="50" not-null="true" />
+        </property>
+
+        <property name="lastName" type="string">
+            <column name="last_name" length="50" not-null="true" />
+        </property>
+
+        <property name="email" type="string">
+            <column name="email" length="100" not-null="true" />
+        </property>
+
+        <property name="phoneNumber" type="string">
+            <column name="phone_number" length="15" />
+        </property>
+
+        <property name="department" type="string">
+            <column name="department" length="50" />
+        </property>
+
+        <property name="salary" type="double">
+            <column name="salary" not-null="true" />
+        </property>
+
+    </class>
+
+</hibernate-mapping>
+

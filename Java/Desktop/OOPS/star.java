@@ -1,6 +1,6 @@
 class Addition
 {  
-    private int a,b,c,d;
+    private int a,b;
     public void setData(int a,int b)
     {
        this.a=a; 

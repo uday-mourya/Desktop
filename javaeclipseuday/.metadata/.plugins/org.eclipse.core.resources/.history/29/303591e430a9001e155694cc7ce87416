@@ -1,0 +1,19 @@
+class Test{
+private string name;
+private string fname;
+private int rollno;
+
+}
+
+
+class jdbceclipse2 {
+
+	public static void main(String[] args) {
+		string name="paradise";
+		
+		
+		System.out.println();
+		
+	}
+
+}

@@ -12,6 +12,10 @@
         <servlet-name>TransactionHistoryServelet</servlet-name>
         <servlet-class>com.transfer.controller.TransactionHistoryServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DownloadPDFServlet</servlet-name>
+        <servlet-class>com.transfer.controller.DownloadPDFServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>TransferServelet</servlet-name>
         <url-pattern>/TransferServelet</url-pattern>
@@ -23,5 +27,9 @@
     <servlet-mapping>
         <servlet-name>TransactionHistoryServelet</servlet-name>
         <url-pattern>/TransactionHistoryServelet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DownloadPDFServlet</servlet-name>
+        <url-pattern>/DownloadPDFServlet</url-pattern>
     </servlet-mapping>
 </web-app>

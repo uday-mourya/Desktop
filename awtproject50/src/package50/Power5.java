@@ -1,4 +1,4 @@
-package mypack;
+package package50;
 import java.awt.Button;
 import java.awt.Color;
 import java.awt.Frame;

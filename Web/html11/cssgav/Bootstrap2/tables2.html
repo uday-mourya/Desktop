@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css">
+    <style>
+        .hm-gradient {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+.darken-grey-text {
+    color: #2E2E2E;
+}
+.input-group.md-form.form-sm.form-2 input {
+    border: 1px solid #bdbdbd;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input.purple-border {
+    border: 1px solid #9e9e9e;
+}
+.input-group.md-form.form-sm.form-2 input[type=text]:focus:not([readonly]).purple-border {
+    border: 1px solid #ba68c8;
+    box-shadow: none;
+}
+.form-2 .input-group-addon {
+    border: 1px solid #ba68c8;
+}
+.danger-text {
+    color: #ff3547; 
+}  
+.success-text {
+    color: #00C851; 
+}
+.table-bordered.red-border, .table-bordered.red-border th, .table-bordered.red-border td {
+    border: 1px solid #ff3547!important;
+}        
+.table.table-bordered th {
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <body class="hm-gradient">
+    
+        <main>
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Grid row -->
+                        <div class="row">
+                            <!-- Grid column -->
+                            <div class="col-md-12">
+                                <h2 class="py-3 text-center font-bold font-up blue-text">Table with pagination</h2>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                        <!--Table-->
+                        <table class="table table-hover table-responsive mb-0">
+                            <!--Table head-->
+                            <thead>
+                                <tr>
+                                    <th scope="row">#</th>
+                                    <th class="th-lg"><a>First Name</a></th>
+                                    <th class="th-lg"><a href="">Last Name</a></th>
+                                    <th class="th-lg"><a href="">Username</a></th>
+                                    <th class="th-lg"><a href="">Username</a></th>
+                                    <th class="th-lg"><a href="">Username</a></th>
+                                    <th class="th-lg"><a href="">Username</a></th>
+                                </tr>
+                            </thead>
+                            <!--Table head-->
+                            <!--Table body-->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Paul</td>
+                                    <td>Topolski</td>
+                                    <td>@P_Topolski</td>
+                                    <td>Paul</td>
+                                    <td>Topolski</td>
+                                    <td>@P_Topolski</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>Paul</td>
+                                    <td>Topolski</td>
+                                    <td>@P_Topolski</td>
+                                    <td>Paul</td>
+                                    <td>Topolski</td>
+                                    <td>@P_Topolski</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                            <!--Table body-->
+                        </table>
+                        <!--Bottom Table UI-->
+                        <div class="d-flex justify-content-center">
+                            <!--Pagination -->
+                            <nav class="my-4 pt-2">
+                                <ul class="pagination pagination-circle pg-blue mb-0">
+                                    <!--First-->
+                                    <li class="page-item disabled clearfix d-none d-md-block"><a class="page-link">First</a></li>
+                                    <!--Arrow left-->
+                                    <li class="page-item disabled">
+                                        <a class="page-link" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                    </li>
+                                    <!--Numbers-->
+                                    <li class="page-item active"><a class="page-link">1</a></li>
+                                    <li class="page-item"><a class="page-link">2</a></li>
+                                    <li class="page-item"><a class="page-link">3</a></li>
+                                    <li class="page-item"><a class="page-link">4</a></li>
+                                    <li class="page-item"><a class="page-link">5</a></li>
+                                    <!--Arrow right-->
+                                    <li class="page-item">
+                                        <a class="page-link" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                    </li>
+                                    <!--First-->
+                                    <li class="page-item clearfix d-none d-md-block"><a class="page-link">Last</a></li>
+                                </ul>
+                            </nav>
+                            <!--/Pagination -->
+                        </div>
+                        <!--Bottom Table UI-->
+                    </div>
+                </div>
+            </div>
+            <!--MDB Tables-->
+          
+        </main>
+      
+    </body>
+</body>
+</html>
