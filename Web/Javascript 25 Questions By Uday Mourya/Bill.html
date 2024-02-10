@@ -1,0 +1,39 @@
+
+<script>
+
+
+    var lm= parseInt(prompt("Enter last month unit"));
+    var cm = parseInt(prompt("Enter current month unit"));
+    tu=cm-lm;
+	document.write("Total unit="+tu);
+	if(tu<=100)
+	{
+	   bill=tu*5;
+       document.write("<br><br>Bill="+bill);
+	}
+	else
+	  {
+	    if(tu>=101==tu<=200)
+	     {
+	   var  b=tu*7.5;
+	   document.write("<br><br>Bill="+b);
+	     }
+		else
+		 {
+		if(tu>=201==tu<=300)
+		 {
+	          var b=tu*12.5;
+              document.write("<br><br>Bill="+b);
+	         }
+		   else
+		    {
+			if(tu>300)
+			{
+	            bill=tu*16;
+                document.write("<br><br>Bill="+bill);
+	                }
+	            }
+                 }
+              }	
+   
+</script>

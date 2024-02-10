@@ -1,0 +1,30 @@
+<script>
+    
+    var n = prompt("Enter Your number");
+	    for(var i=1; i<=n;i++){			
+			
+			for(var j=1;j<=n-i;j++)
+			{					
+				document.write("&nbsp;");
+			}			
+			for(var k=1; k<=i;k++)
+			{				 
+				document.write("*");			
+			}				
+			document.write("<br>");		
+		}
+		 for(var i=1; i<=n;i++){	
+						
+			for(var k=1; k<=i;k++)
+			{				 
+				document.write("&nbsp;");
+			
+			}
+			for(var j=n-1;j>=i;j--)
+			{					
+				document.write("*");
+			}
+			document.write("<br>");
+		
+		}
+</script>

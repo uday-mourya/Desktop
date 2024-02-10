@@ -1,0 +1,24 @@
+<script>
+    let row = prompt("Enter rows")*1;
+    for(let i=0; i<=row;i++){
+            for(let j=row; j>i;j--){
+                document.write("&nbsp;&nbsp;");
+            
+        }
+        for(let k=1; k<=i; k++){
+            document.write("*&nbsp;&nbsp;");
+        }
+            document.write("<br>");
+        }
+        
+        for(let i=row-1; i>=1;i--){
+            for(let j=i; j<row;j++){
+                document.write("&nbsp;&nbsp;");
+            
+        }
+        for(let k=1; k<=i; k++){
+            document.write("*&nbsp;&nbsp;");
+        }
+        document.write("<br>");
+        }
+</script>

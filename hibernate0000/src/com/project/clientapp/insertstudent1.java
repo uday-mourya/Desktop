@@ -8,7 +8,7 @@ import org.hibernate.cfg.Configuration;
 
 import com.project.pojo.Student1;
 
-public class insertstudent1 {
+public class Insertstudent1 {
 
     public static void main(String[] args) {
 

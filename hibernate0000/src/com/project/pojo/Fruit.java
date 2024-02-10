@@ -20,6 +20,7 @@ public class Fruit {
     public Fruit() {
     }
 
+    
     public int getFruitId() {
         return fruitId;
     }

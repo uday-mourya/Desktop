@@ -1,0 +1,14 @@
+<script>
+    var x = parseInt(prompt("Enter number X"));
+   
+    var i = 1, a = 1, sum = 0,fact=1;
+    while(i<=x)
+  {
+    fact=fact/i;
+    a=fact*(i*2-1);
+    document.write((i*2-1)+"/!"+i+"+");
+    sum=sum+a;
+    i++;
+  }
+    document.write(" =  X series sum : " + sum);
+</script>

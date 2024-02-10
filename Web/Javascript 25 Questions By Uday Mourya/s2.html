@@ -1,0 +1,23 @@
+<script>
+    //-!2/2+!4/4-!6/6
+    var n=prompt("Enter your Number");
+    n=parseInt(n);
+
+    var fact=1,sum=0,i=1,a=1;
+    fact=parseInt(fact);
+    while(a<=n){
+        fact=fact*i;
+        if(i%2){
+            if(a%2){
+                sum=sum+fact/i;
+            }
+            else{
+                sum=sum-fact/i;
+            }
+            a++;
+        }
+        i++;
+
+    }
+    document.write(sum);
+</script>

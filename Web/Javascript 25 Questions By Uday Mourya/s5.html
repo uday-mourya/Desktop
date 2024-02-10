@@ -1,0 +1,25 @@
+<script>
+    var n = prompt("Enter your Number");
+    n = parseInt(n);
+
+    var fact = 1, sum = 0, i = 1, a = 1;
+    fact = parseInt(fact);
+    while (a <= n) {
+        fact = fact * i;
+        if (i % 2 == 0) {
+           
+            document.write((a * 2) + "/!" + (a * 2));
+            if (a%2==0) {
+                sum = sum -fact;
+                document.write("-");
+            }
+            else{
+                sum = sum +  fact;
+                document.write("+");
+            }
+            a++;
+        }
+        i++;
+    }
+    document.write(" = " + sum);
+</script>

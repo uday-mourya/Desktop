@@ -1,0 +1,22 @@
+<script>
+    let n = prompt("Enter the number of rows")*1;  // Change this value to adjust the size of the pyramid
+
+for (let i = 1; i <= n; i++) {
+  
+  // Print spaces
+  for (let j = 1; j <= n - i; j++) {
+    document.write("&nbsp;&nbsp;&nbsp;");
+  }
+  // Print numbers in ascending order
+  for (let k = i; k >= 1; k--) {
+    document.write(k+" ");
+  }
+  // Print numbers in descending order
+  for (let l = 2; l <= i; l++) {
+    document.write(l+" ");
+  }
+  document.write("<br>");
+}
+
+</script>
+<!-- Sachin -->

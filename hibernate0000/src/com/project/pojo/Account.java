@@ -8,7 +8,6 @@ package com.project.pojo;
  *
  * @author dell
  */
-
 import java.util.Date;
 
 public class Account {
@@ -22,8 +21,16 @@ public class Account {
     private String status;
 
     // Constructors, getters, setters (omitted for brevity)
-
     public Account() {
+    }
+
+    public Account(String accountNumber, String accountType, double balance, String holderName, Date openDate, String status) {
+        this.accountNumber = accountNumber;
+        this.accountType = accountType;
+        this.balance = balance;
+        this.holderName = holderName;
+        this.openDate = openDate;
+        this.status = status;
     }
 
     public int getAccountId() {
@@ -32,6 +39,7 @@ public class Account {
 
     public void setAccountId(int accountId) {
         this.accountId = accountId;
+
     }
 
     public String getAccountNumber() {
@@ -81,6 +89,5 @@ public class Account {
     public void setStatus(String status) {
         this.status = status;
     }
-    
-    
+
 }

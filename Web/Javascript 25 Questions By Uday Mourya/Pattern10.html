@@ -1,0 +1,23 @@
+<script>
+    var rows = prompt("Enter Your number");
+    var i, j, k     
+		for (i=rows; i>= 1 ; i--)  
+		{  
+		    for (j = i; j<rows ; j++)   
+		    {  
+		        document.write("&nbsp;&nbsp;");  
+		    }     
+		    for (k = 1; k <= (2*i -1) ;k++)   
+		    {  
+		        if( k==1 || i == rows || k==(2*i-1))   
+		        {  
+		            document.write("*");  
+		        }  
+		        else   
+		        {  
+		            document.write("&nbsp;&nbsp;");  
+		        }  
+		    }  
+		    document.write("<br>");  
+		}  
+</script>

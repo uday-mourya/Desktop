@@ -1,0 +1,19 @@
+<script>
+    var n = prompt("Enter Your Number")
+        for (var i = 0; i < n; i++)
+		{
+            for (var j = 0; j < n - i; j++)
+			{
+                document.write("&nbsp;&nbsp;");
+            }
+            for (var k = 0; k <= i; k++)
+			{
+                document.write(k + 1);
+            }
+            for (var l = i - 1; l >= 0; l--) 
+			{
+                document.write(l + 1);
+            }
+            document.write("<br>");
+        }
+</script>

@@ -1,0 +1,19 @@
+<script>
+    let row = prompt("Enter rows")*1;
+
+    for(let i=1; i<=row; i++){
+            for(let j=row-i; j>=1; j--){
+                    document.write("&nbsp;&nbsp;&nbsp;");
+            }
+            for(let k=1; k<=(i*2)-1; k++){
+                document.write(k+"&nbsp;");
+                if(k==i){
+                    for(let m=k-1; m>=1; m--){
+                        document.write(m+"&nbsp;");
+                    }
+                    break;
+                }
+            }
+            document.write("<br>");
+        }
+</script>

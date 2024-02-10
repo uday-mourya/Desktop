@@ -1,0 +1,11 @@
+<script>
+    var hcf;
+    var num1=parseInt(prompt("Enter Your Number"));
+    var num2=parseInt(prompt("Enter Your Number"));
+    for(var i=1;i<=num1&&i<=num2;i++){
+        if(num1%i==0&&num2%i==0){
+            hcf=i;
+        }
+    }
+    document.write("hcf of "+num1+"and"+num2+"="+hcf)
+</script>

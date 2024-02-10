@@ -1,0 +1,16 @@
+<script>
+    var number = parseInt(prompt("Enter a Number"));
+    if(number < 1){
+        document.write("Enter a valid Number");
+    }
+    else if(number % 5 == 0 && number % 11==0){
+        document.write("Number is divide by 5 and 11 both");
+    }
+    else if(number % 5 == 0){
+        document.write("Number is divided by 5 ");
+    }else if(number % 11 == 0){
+        document.write("Number is divided by 11")
+    }else{
+        document.write("Number is not Divisible");
+    }
+</script>

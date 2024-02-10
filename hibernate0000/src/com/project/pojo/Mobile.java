@@ -22,6 +22,16 @@ public class Mobile {
     public Mobile() {
     }
 
+    public Mobile(int mobileId, String brand, String model, int storageCapacity, String color, double price, Date releaseDate) {
+        this.mobileId = mobileId;
+        this.brand = brand;
+        this.model = model;
+        this.storageCapacity = storageCapacity;
+        this.color = color;
+        this.price = price;
+        this.releaseDate = releaseDate;
+    }
+    
     public int getMobileId() {
         return mobileId;
     }

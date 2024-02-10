@@ -1,0 +1,56 @@
+<script>
+    let n = parseInt(prompt("Enter a Number"));
+
+    if(n>31 && n<0)
+     document.write("Invalid Month");
+     
+    else if(n==1||n==3||n==5||n==7||n==8||n==10||n==12)
+    {
+        document.write("31 days.....");
+        
+        if(n==1)
+        
+        document.write("January....");
+      
+        
+       else if(n==3)
+       document.write("March....");
+        
+        else if(n==5)
+        document.write("May....");
+        
+        else if(n==7)
+        document.write("july....");
+        
+        else if(n==8)
+        document.write("Augest....");
+        
+        else if(n==10)
+        document.write("October....");
+        
+        else
+        document.write("December....");
+        
+         }
+        else if(n==4||n==6||n==9||n==11)
+        document.write("30 Days....");
+        {
+         if(n==4)
+         document.write("April....");
+         
+         else if(n==6)
+         document.write("June....");
+         
+         else if(n==9)
+         document.write("September....");
+         
+         else if(n==11)
+         document.write("November....");
+         }
+         
+          if(n==2){
+            document.write("28 / 29 days. <br>");
+          document.write("Febuary.....");
+          }
+        
+</script>

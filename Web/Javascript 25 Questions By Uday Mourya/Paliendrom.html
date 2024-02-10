@@ -1,0 +1,17 @@
+<script>
+    var num = parseInt(prompt("Enter Your Number"));
+    var real = num;
+    var rev = 0;
+
+    while (num > 0) {
+        var digit = num % 10;
+        rev = rev * 10 + digit;
+        num = parseInt(num / 10);
+    }
+
+    if (rev === real) {
+        document.write("This number is a Palindrome");
+    } else {
+        document.write("This number is Not a Palindrome");
+    }
+</script>

@@ -1,0 +1,22 @@
+<script>
+    var n = prompt("Enter your Number");
+    n = parseInt(n);
+
+    var fact = 1, sum = 0, i = 1, a = 1;
+    while (a <= n) {
+       fact = 1; 
+       for (var j = 1; j <= i; j++) {
+           fact *= j; 
+       }
+       if (!i % 2 == 0) {
+           sum += fact;
+           document.write( "!"+i);
+           if (a < n) {
+               document.write("+"); 
+           }
+           a++;
+       }
+       i++;
+    }
+    document.write(" = " + sum); 
+</script>

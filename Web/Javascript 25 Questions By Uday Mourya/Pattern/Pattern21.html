@@ -1,0 +1,14 @@
+<script>
+    let n = prompt("Enter rows")*1;
+    for(i=1; i<=n; i++)
+	   {
+	      for(j=1; j<=n; j++)
+	      {
+            if(i==parseInt(n/2) || j==parseInt(n/2))
+                    document.write("*"+"&nbsp;");
+                else 
+                    document.write("&nbsp;&nbsp;&nbsp;");
+            }
+            document.write("<br>");
+	   }
+</script>
