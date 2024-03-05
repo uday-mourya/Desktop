@@ -1,13 +1,12 @@
 <script>
-    var age1 = parseInt(prompt("Enter Ram's Age"));
-    var age2 = parseInt(prompt("Enter Shyam's Age"));
-    var age3 = parseInt(prompt("Enter Ajay's Age"));
+  var age1 = parseInt(prompt("Enter Ram's Age"));
+  var age2 = parseInt(prompt("Enter Shyam's Age"));
+  var age3 = parseInt(prompt("Enter Ajay's Age"));
 
-    if(age1<age2 && age1<age3)
-		document.write("The Youngest Age is Ram");
-		else if(age2<age1 && age2<age3)			
-        document.write("The Youngest Age is Shyam");
-		else			
-        document.write("The Youngest Age is Ajay");
-
+  if (age1 > age2 && age1 > age3)
+    document.write("The Youngest Age is Ram");
+  else if (age2 > age3)
+    document.write("The Youngest Age is Shyam");
+  else 
+    document.write("The Youngest Age is Ajay");
 </script>
