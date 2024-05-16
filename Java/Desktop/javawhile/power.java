@@ -4,7 +4,7 @@ class Power{
 	  System.out.println("Enter Number");
 	  int a = sc.nextInt();
 	  System.out.println("Enter Power");
-	  int b = sc.nextInt();
+	   int b = sc.nextInt();
 	  int i=1;
 	  int pow=1;  
 	  while(i<=b)

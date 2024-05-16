@@ -1,6 +1,10 @@
 import java.util.Scanner;
-class Forfactorial{
-  public static void main(String[] args){
+class Factorial{
+
+  public static void main(String [] args){
+	Factorial.displayFactorial();
+  }
+  public static void displayFactorial(){
 	  Scanner sc = new Scanner(System.in);
    	  System.out.println("Enter any Number");
    	  int n = sc.nextInt();

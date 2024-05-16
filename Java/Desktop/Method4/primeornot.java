@@ -1,4 +1,4 @@
- class Test
+class Test
  { 
    public static void  prime(int n, int i, int count)
    { 
@@ -30,4 +30,3 @@
    
    }
  }
-

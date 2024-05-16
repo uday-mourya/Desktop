@@ -1,5 +1,5 @@
-#Student Information
-#Mon Sep 11 09:43:18 IST 2023
+#
+#Wed May 15 20:29:31 IST 2024
 UdayAdhar=123456789012
 UdayCouse=bca
 UdayFName=sysysys
@@ -21,6 +21,8 @@ UserdevuPassword=1234
 Usersoniya=soniya
 UsersoniyaPassword=12345678
 Useruday=uday
+Useruday\ singh=uday singh
+Useruday\ singhPassword=1234
 Useruday1=uday1
 Useruday12=uday12
 Useruday12Password=12345678
@@ -40,16 +42,22 @@ adminName=uday
 adminSem=2
 nullAdhar=123456789012
 nullCouse=bca
-nullFName=hshshs
-nullLName=mourya
+nullFName=hdhdh
+nullLName=singh
 nullName=uday
-nullSem=1
+nullSem=3
 soniyaAdhar=123456789012
 soniyaCouse=bcom
 soniyaFName=dghdhgdhgdghd
 soniyaLName=sgdgdgdg
 soniyaName=soniya
 soniyaSem=3
+uday\ singhAdhar=123456789012
+uday\ singhCouse=bca
+uday\ singhFName=bhanupratap
+uday\ singhLName=singh
+uday\ singhName=uday
+uday\ singhSem=4
 uday12Adhar=123456789012
 uday12Couse=bca
 uday12FName=dhdhdhdh
